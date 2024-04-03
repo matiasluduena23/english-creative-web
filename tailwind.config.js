@@ -11,6 +11,9 @@ module.exports = {
                 '2xl': '1400px',
             },
         },
+        fontFamily: {
+            Baloo: ['"Baloo Tammudu 2"', 'system-ui'],
+        },
         extend: {
             colors: {
                 border: 'hsl(var(--border))',
