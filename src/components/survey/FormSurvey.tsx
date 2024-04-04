@@ -5,14 +5,7 @@ import { couching, translate } from '@/data/survey';
 import CheckboxMultiple from './CheckboxMultiple';
 import { DialogSurvey } from '@/components/survey/DialogSurvey';
 import { useState } from 'react';
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from '@/components/ui/card';
+import { Card, CardTitle } from '@/components/ui/card';
 
 export default function () {
     const [open, setOpen] = useState(false);

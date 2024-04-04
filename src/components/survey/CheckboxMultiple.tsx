@@ -1,4 +1,4 @@
-import type { UseFormRegister, FieldValues } from 'react-hook-form';
+import type { UseFormRegister } from 'react-hook-form';
 import type { formInputsProps } from '@/data/survey';
 import { Checkbox } from '../ui/checkbox';
 
