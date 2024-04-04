@@ -1,0 +1,23 @@
+---
+import success from '@/assets/success.jpg';
+import { Image } from 'astro:assets';
+---
+
+
+
+<section class="bg-lightRed py-[5rem]">
+        <div class="container">
+            <div class="grid grid-cols-2 items-center gap-12">
+                <p class="text-center text-[2rem] font-Baloo text-balance font-semibold max-w-[600px]">
+                    Succeed in transforming your project’s material into English
+                </p>
+                <div>
+                    <Image
+                    class="rounded-full"
+                        src={success}
+                        alt="woman smiling"
+                    />
+                </div>
+            </div>
+        </div>
+</section>
