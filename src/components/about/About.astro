@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import iconHighLeve from '../../assets/highLevel.svg';
+import iconTrustPeople from '../../assets/trustPeople.svg';
+import iconPerson from '../../assets/person.svg';
+import aboutLeftCircle from '../../assets/about-left-image.png';
+---
+
+
+<section id="about" class="pt-[5rem]">
+    <header class="bg-background pb-8">
+        <h1 class="text-darkGreen text-center text-6xl font-Baloo font-bold">
+            We are all <span class="text-softRed">creatives</span> at heart
+        </h1>
+    </header>
+    <div class="bg-darkGreen text-center relative py-[5rem] ">
+        <Image
+            class="absolute -left-10 -top-[140px] w-[300px] hidden lg:block"
+            src={aboutLeftCircle}
+            alt="cirlce"
+        />
+        <div class="container">
+            <ul class="grid grid-cols-3 gap-8 text-xl text-background font-semibold  pt-[5rem]">
+                <li class="flex flex-col items-center">
+                    <div class="">
+                        <Image
+                            class="max-w-[70px]"
+                            src={iconHighLeve}
+                            alt="icon high level"
+                        />
+                    </div>
+                    <p >
+                        Your project deserves our high-end level of English so
+                        that it stands out for the right reasons.
+                    </p>
+                </li>
+                <li class="flex flex-col items-center">
+                    <div class="wrap-image">
+                        <Image
+                            class="max-w-[70px]"
+                            src={iconTrustPeople}
+                            alt="icon trust people"
+                        />
+                    </div>
+                    <p >
+                        We know that one of the most difficult things is to
+                        trust somebody else to work on your project.
+                    </p>
+                </li>
+                <li class="flex flex-col items-center">
+                    <div class="wrap-image">
+                        <Image
+                            class="max-w-[70px]"
+                            src={iconPerson}
+                            alt="icon person "
+                        />
+                    </div>
+
+                    <p>
+                        That’s why we are here, when and where you need us, for
+                        all your English needs.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

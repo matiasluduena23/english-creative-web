@@ -1,0 +1,35 @@
+---
+import '../styles/globals.css'
+import { Button } from '@/components/ui/button';
+import { ChevronLeftIcon } from 'lucide-react';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="min-h-screen grid content-center">
+        <div class="container text-center">
+            <div class="flex flex-col items-center justify-start">
+                <h1 class="font-Baloo text-[3.5rem] font-bold">
+                    Hub
+                </h1>
+                <h2 class="text-[2.5rem] font-semibold">
+                    We’re busy preparing our community space.
+                    <span class="block">Come back soon!</span>
+                </h2>
+                <Button className="bg-darkBlue  text-background hover:opacity-70" > 
+                    <a href="/" class="flex items-center">
+                        <ChevronLeftIcon  /> Go Back</a
+                    >
+                </Button>
+            </div>
+         
+         
+        </div>
+	</body>
+</html>
