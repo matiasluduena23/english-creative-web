@@ -1,0 +1,56 @@
+---
+import { Accordion } from '@/components/services/Accordion';
+
+const data = [
+    {
+        title: 'Something 1',
+        description: 'Yes. It adheres to the WAI-ARIA design pattern.',
+    },
+    {
+        title: 'Something 2',
+        description:
+            "Yes. It comes with default styles that matches the other components' aesthetic.",
+    },
+    {
+        title: 'Something 3',
+        description:
+            "Yes. It's animated by default, but you can disable it if you prefer.",
+    },
+    {
+        title: 'Something 4',
+        description:
+            "Yes. It's animated by default, but you can disable it if you prefer.",
+    },
+];
+---
+
+<section id="services" class="pb-[5rem]">
+    <header class="bg-darkGreen pb-[10px] pt-[5rem]">
+        <h1 class="text-background text-center text-6xl font-Baloo font-bold ">Services</h1>
+    </header>
+    <div class="container">
+        <section class="py-[5rem]">
+            <h2 class="text-center font-semibold font-Baloo text-[2rem]">One-to-one</h2>
+            <div class="grid grid-cols-2 items-center max-w-[1100px] mx-auto">
+                <div class=" flex">
+                    <ul class="bg-darkRed rounded-full w-[200px] h-[200px] flex justify-center items-center flex-col text-background">
+                        <li>Somenthing</li>
+                        <li>Somenthing</li>
+                        <li>Somenthing</li>
+                    </ul>
+                    <ul class="bg-lightRed rounded-full w-[200px] h-[200px] flex justify-center items-center flex-col text-background">
+                        <li>Somenthing</li>
+                        <li>Somenthing</li>
+                        <li>Somenthing</li>
+                    </ul>
+                </div>
+                <div class="wrap-accordion">
+                    <Accordion data={data} client:idle />
+                </div>
+              
+            </div>
+        </section>
+
+        <a href="/survey" class="block font-semibold bg-darkBlue text-background py-3 px-6 rounded-xl mt-[4rem] mx-auto w-fit hover:opacity-70">Join Forces</a>
+    </div>
+</section>
