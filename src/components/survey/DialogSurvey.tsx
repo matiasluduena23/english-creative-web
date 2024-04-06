@@ -8,22 +8,33 @@ import {
 } from '@/components/ui/dialog';
 import { DialogForm } from './DialogForm';
 import { useState } from 'react';
-import { Image } from 'astro:assets';
-import whatsappLogo from '@/assets/whatsappDark.svg';
 import emailLogo from '@/assets/email.svg';
+import zoomLogo from '@/assets/zoom.svg';
+import { DialogCalendly } from './DialogCalendly';
 
 type DialogSurveyProps = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
     interest: string[] | undefined;
+    setInterest: React.Dispatch<React.SetStateAction<string[] | undefined>>;
 };
 
-export function DialogSurvey({ open, setOpen, interest }: DialogSurveyProps) {
+export function DialogSurvey({
+    open,
+    setOpen,
+    interest,
+    setInterest,
+}: DialogSurveyProps) {
     const [openForm, setOpenForm] = useState(false);
-    const WhatappMsg = 'https://wa.me/3513414789?text=' + { interest };
+    const [openCalendly, setOpenCalendly] = useState(false);
+
     const handleClick = () => {
         setOpen(!open);
         setOpenForm(!openForm);
+    };
+    const handleClickCalendly = () => {
+        setOpen(!open);
+        setOpenCalendly(!openCalendly);
     };
 
     return (
@@ -37,7 +48,7 @@ export function DialogSurvey({ open, setOpen, interest }: DialogSurveyProps) {
                 </DialogHeader>
                 <div className="flex justify-around">
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p>Email</p>
+                        <p>Send us an Email</p>
                         <button
                             onClick={handleClick}
                             className="max-w-16 block hover:opacity-80"
@@ -50,18 +61,17 @@ export function DialogSurvey({ open, setOpen, interest }: DialogSurveyProps) {
                         </button>
                     </div>
                     <div className=" flex flex-col items-center gap-2">
-                        <p>WhatApp</p>
-                        <a
-                            href={WhatappMsg}
-                            className="max-w-12 block hover:opacity-80"
-                            target="_blank"
+                        <p>Schedule a meeting</p>
+                        <button
+                            onClick={handleClickCalendly}
+                            className="max-w-16 block hover:opacity-80"
                         >
                             <img
-                                src={whatsappLogo.src}
-                                className="w-full"
+                                src={zoomLogo.src}
+                                className="w-12"
                                 alt="whatsapp icon"
                             />
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <DialogFooter></DialogFooter>
@@ -70,6 +80,13 @@ export function DialogSurvey({ open, setOpen, interest }: DialogSurveyProps) {
                 openForm={openForm}
                 setOpenForm={setOpenForm}
                 interest={interest}
+                setInterest={setInterest}
+            />
+            <DialogCalendly
+                openCalendly={openCalendly}
+                setOpenCalendly={setOpenCalendly}
+                interest={interest}
+                setInterest={setInterest}
             />
         </Dialog>
     );

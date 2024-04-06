@@ -14,12 +14,14 @@ type DialogFormProps = {
     openForm: boolean;
     setOpenForm: React.Dispatch<React.SetStateAction<boolean>>;
     interest: string[] | undefined;
+    setInterest: React.Dispatch<React.SetStateAction<string[] | undefined>>;
 };
 
 export function DialogForm({
     openForm,
     setOpenForm,
     interest,
+    setInterest,
 }: DialogFormProps) {
     const {
         register,
@@ -29,8 +31,14 @@ export function DialogForm({
     const onSubmit = () => console.log('hola');
 
     return (
-        <Dialog open={openForm} onOpenChange={() => setOpenForm(!openForm)}>
-            <DialogContent className="sm:max-w-[375px] bg-white">
+        <Dialog
+            open={openForm}
+            onOpenChange={() => {
+                setOpenForm(!openForm);
+                setInterest([]);
+            }}
+        >
+            <DialogContent className="sm:max-w-[700px] bg-white">
                 <DialogHeader>
                     <DialogTitle>Fill the form please</DialogTitle>
                 </DialogHeader>
@@ -75,6 +83,7 @@ export function DialogForm({
                     </div>
                     <div className="relative ">
                         <Textarea
+                            rows={6}
                             defaultValue={interest && interest.join('\n')}
                             {...register('message', { required: true })}
                         />
@@ -86,7 +95,7 @@ export function DialogForm({
                     </div>
                     <Button
                         type="submit"
-                        className="mt-5"
+                        className="mt-5 px-8 bg-darkBlue text-white hover:opacity-70"
                         defaultValue={interest}
                     >
                         Send
