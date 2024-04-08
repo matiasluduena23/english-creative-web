@@ -4,14 +4,13 @@ import type { formInputsProps } from '@/data/survey';
 import { couching, translate } from '@/data/survey';
 import CheckboxMultiple from './CheckboxMultiple';
 import { DialogSurvey } from '@/components/survey/DialogSurvey';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Card, CardTitle } from '@/components/ui/card';
 
 export default function () {
     const [open, setOpen] = useState(false);
     const [interest, setInterest] = useState<string[]>();
-    const { register, handleSubmit, reset, formState, getValues } =
-        useForm<formInputsProps>();
+    const { register, handleSubmit } = useForm<formInputsProps>();
 
     const onSubmit: SubmitHandler<formInputsProps> = (data) => {
         const values: string[] = Object.values(data).filter(
