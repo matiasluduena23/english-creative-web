@@ -16,15 +16,9 @@ type DialogSurveyProps = {
     open: boolean;
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
     interest: string[] | undefined;
-    setInterest: React.Dispatch<React.SetStateAction<string[] | undefined>>;
 };
 
-export function DialogSurvey({
-    open,
-    setOpen,
-    interest,
-    setInterest,
-}: DialogSurveyProps) {
+export function DialogSurvey({ open, setOpen, interest }: DialogSurveyProps) {
     const [openForm, setOpenForm] = useState(false);
     const [openCalendly, setOpenCalendly] = useState(false);
 
@@ -80,13 +74,11 @@ export function DialogSurvey({
                 openForm={openForm}
                 setOpenForm={setOpenForm}
                 interest={interest}
-                setInterest={setInterest}
             />
             <DialogCalendly
                 openCalendly={openCalendly}
                 setOpenCalendly={setOpenCalendly}
                 interest={interest}
-                setInterest={setInterest}
             />
         </Dialog>
     );

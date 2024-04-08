@@ -11,10 +11,11 @@ export default function ({ data, register }: checkboxMultipleProps) {
         <div>
             {data.map((item: formInputsProps) => (
                 <div key={item.id} className="flex items-center space-x-2 mb-2">
-                    <Checkbox
+                    <input
+                        type="checkbox"
                         id={item.id}
                         value={item.label}
-                        {...register(item.id as 'id')}
+                        {...register(item.id as 'id', {})}
                     />{' '}
                     <label htmlFor={item.id} className="leading-none">
                         {item.label}

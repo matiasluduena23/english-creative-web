@@ -14,14 +14,12 @@ type DialogFormProps = {
     openForm: boolean;
     setOpenForm: React.Dispatch<React.SetStateAction<boolean>>;
     interest: string[] | undefined;
-    setInterest: React.Dispatch<React.SetStateAction<string[] | undefined>>;
 };
 
 export function DialogForm({
     openForm,
     setOpenForm,
     interest,
-    setInterest,
 }: DialogFormProps) {
     const {
         register,
@@ -31,13 +29,7 @@ export function DialogForm({
     const onSubmit = () => console.log('hola');
 
     return (
-        <Dialog
-            open={openForm}
-            onOpenChange={() => {
-                setOpenForm(!openForm);
-                setInterest([]);
-            }}
-        >
+        <Dialog open={openForm} onOpenChange={() => setOpenForm(!openForm)}>
             <DialogContent className="sm:max-w-[700px] bg-white">
                 <DialogHeader>
                     <DialogTitle>Fill the form please</DialogTitle>

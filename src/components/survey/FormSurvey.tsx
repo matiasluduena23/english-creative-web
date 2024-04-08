@@ -4,22 +4,20 @@ import type { formInputsProps } from '@/data/survey';
 import { couching, translate } from '@/data/survey';
 import CheckboxMultiple from './CheckboxMultiple';
 import { DialogSurvey } from '@/components/survey/DialogSurvey';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Card, CardTitle } from '@/components/ui/card';
 
 export default function () {
     const [open, setOpen] = useState(false);
     const [interest, setInterest] = useState<string[]>();
-    const { register, handleSubmit, reset } = useForm<formInputsProps>();
+    const { register, handleSubmit, reset, formState, getValues } =
+        useForm<formInputsProps>();
 
     const onSubmit: SubmitHandler<formInputsProps> = (data) => {
         const values: string[] = Object.values(data).filter(
             (item: string | boolean) => item !== false
         );
-        setInterest((prev) => (prev = values));
-        console.log(values);
-        console.log(data);
-        reset();
+        setInterest(values);
         setOpen(!open);
     };
 
@@ -49,12 +47,7 @@ export default function () {
                     className="block font-semibold bg-darkBlue text-background py-3 px-6 rounded-xl mt-[4rem] mx-auto w-fit hover:opacity-70 cursor-pointer"
                 />
             </form>
-            <DialogSurvey
-                open={open}
-                setOpen={setOpen}
-                interest={interest}
-                setInterest={setInterest}
-            />
+            <DialogSurvey open={open} setOpen={setOpen} interest={interest} />
         </div>
     );
 }
