@@ -5,6 +5,7 @@ import twoArrow from '@/assets/twoArrow.png';
 import star from '@/assets/star.png';
 import janelle from '@/assets/JanelleWorking.jpg';
 import { Image } from 'astro:assets';
+import Bento from './Bento.astro';
 ---
 
 <section>
@@ -29,8 +30,10 @@ import { Image } from 'astro:assets';
     <div class="bg-white py-[5rem]">
         <div class="container">
             <h3 class="text-5xl text-foreground font-Baloo font-semibold text-center">Big ideas can't stay small</h3>
-            <div class="grid grid-cols-2 items-center mt-[4rem]">
-                <div class="relative text-center">
+            <!-- <div class="grid grid-cols-2 items-center mt-[4rem]"> -->
+                <Bento />
+                
+                <!-- <div class="relative text-center">
                    
                     <p class="text-[1.5rem] text-balance  font-semibold">
                         Expand your project's potencial through English
@@ -50,7 +53,7 @@ import { Image } from 'astro:assets';
                     />
                     <Image class='absolute w-[130px] -top-8 -right-14 z-0' src={star} alt="star" />
                 </div>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
     </div>
 </section>

@@ -1,0 +1,65 @@
+---
+import janelleImg from '@/assets/JanelleWorking.jpg'
+import presentation from '@/assets/presentation-2.jpg'
+import eye from '@/assets/eye.png'
+import logoRed from '@/assets/logoRed.png'
+import circleStar from '@/assets/circleStar.png'
+import barrilete from '@/assets/barrilete.png'
+import successWoman from '@/assets/successWoman.png'
+import footer01 from '@/assets/bentoFooter01.png'
+import footer02 from '@/assets/bentoFooter02.png'
+import footer03 from '@/assets/bentoFooter03.png'
+import footer04 from '@/assets/bentoFooter04.png'
+import Image from 'astro/components/Image.astro'
+---
+
+
+<div class="grid grid-cols-8 grid-rows-[130px_130px] max-w-[1100px] mx-auto font-semibold mt-20 text-lg">
+<div class="rounded-xl p-6 text-center col-span-2 bg-foreground text-background grid content-center">
+    <div class="flex items-center gap-1 justify-center mb-1">
+        <Image class="w-6 "  src={circleStar} alt='circle' />
+        <p class="border border-background py-0 px-2 rounded-full">Potencial through</p>
+    </div>
+    <div class="flex items-center justify-center gap-1 mb-1">
+        <p class="border border-background py-0 px-2 rounded-full">one-on-one</p>
+        <Image class="w-6 "  src={circleStar} alt='circle' />
+    </div>
+    <div class="flex items-center justify-center gap-1">
+        <Image class="w-6 " src={circleStar} alt='circle' />
+        <p class="border border-background py-0 px-2 rounded-full">mentoring</p>
+    </div>
+</div>
+<div class="rounded-xl col-span-2 row-span-2">
+    <Image class="rounded-xl object-cover h-full" src={janelleImg} alt='Janelle working ' />
+</div>
+<div class="rounded-xl p-4 col-span-2  bg-lightOrange relative">
+    <p class="relative z-10">Grow confident explaining your project to important audiences</p>
+    <Image class="absolute w-28 right-0 top-0 z-0" src={barrilete} alt='barrilete' />
+
+</div>
+<div class="rounded-xl  col-span-2 ">
+    <Image class="rounded-xl  object-cover h-full " src={presentation} alt='speach ' />
+
+</div>
+<div class="rounded-xl p-4  col-span-2 bg-softRed ">
+    <Image class="rounded-xl m-auto h-full object-contain " src={eye} alt='eye ' />
+
+</div>
+<div class="rounded-xl p-4 bg-background ">
+    <Image class="rounded-xl m-auto h-full w-14 object-contain  " src={logoRed} alt='logo red' />
+
+</div>
+<div class="rounded-xl  ">
+    <Image class="rounded-xl object-cover h-full " src={successWoman} alt='success woman' />
+
+</div>
+<div class="rounded-xl p-4  col-span-2 bg-foreground text-background">
+   <p><span class="text-softRed">Succeed in transforming</span>  your project’s material into English</p> 
+   <div class="flex items-center justify-center gap-2  mt-3">
+    <Image class="w-8 " src={footer01} alt='icon footer card' />
+    <Image class="w-8  " src={footer02} alt='icon footer card' />
+    <Image class="w-8  " src={footer03} alt='icon footer card' />
+    <Image class="w-8  " src={footer04} alt='icon footer card' />
+    </div>
+   </div>
+</div>
