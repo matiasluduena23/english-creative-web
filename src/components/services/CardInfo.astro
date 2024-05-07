@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import logoInfo from '@/assets/logoInfo.png';
+import { InfoDialog } from './InfoDialog';
+
+const { card } = Astro.props;
+const { title, text, info } = card as CardInfo;
+---
+
+<article
+	class="font-OpenSans text-background bg-darkGreen p-6 rounded-lg max-w-[360px]"
+>
+	<div class="flex items-center gap-2">
+		<Image class="w-8" src={logoInfo} alt="icon footer card" />
+		<h2 class="font-OpenSans text-xl font-bold">{title}</h2>
+	</div>
+	<p class="max-w-[200px] my-6">{text}</p>
+	<InfoDialog client:load card={card} />
+</article>

@@ -1,66 +1,112 @@
 ---
-import { Accordion } from '@/components/services/Accordion';
+import { DialogCalendly } from '../ui/DialogCalendly';
+import CardInfo from './CardInfo.astro';
+import CardStep from './CardStep.astro';
 
-const data = [
-    {
-        title: 'Something 1',
-        description: 'Yes. It adheres to the WAI-ARIA design pattern.',
-    },
-    {
-        title: 'Something 2',
-        description:
-            "Yes. It comes with default styles that matches the other components' aesthetic.",
-    },
-    {
-        title: 'Something 3',
-        description:
-            "Yes. It's animated by default, but you can disable it if you prefer.",
-    },
-    {
-        title: 'Something 4',
-        description:
-            "Yes. It's animated by default, but you can disable it if you prefer.",
-    },
+const dataCardInfo: CardInfo[] = [
+	{
+		title: 'Essential',
+		text: 'For short-term needs and one-off tasks',
+		info: {
+			couching:
+				'Refining pitches and presentations, preparing for dream job interviews',
+			translation: `Pitch (up to 5 minutes)\nPitch deck
+Website landing page
+Specific letter or email
+Video subtitles/Photograph captions
+`,
+		},
+	},
+	{
+		title: 'Practical',
+		text: 'For med-term needs and project-based tasks',
+		info: {
+			couching:
+				'Developing pitches and presentations, preparing for meetings with investors, producers, sponsors',
+			translation: `Entire website/social media page\nCommunication material: newsletters, social media content`,
+		},
+	},
+	{
+		title: 'Tailored',
+		text: 'Good for long-term needs and ongoing task',
+		info: {
+			couching:
+				'Following up with investors, producers, sponsors, and polishing Business English.',
+			translation: 'New or updated communication on an ongoing basis',
+		},
+	},
+];
+
+const dataCardSteps = [
+	{
+		id: 1,
+		title: 'Schedule a call',
+		text: 'You will schedule an introductory call to share details about your venture with us.',
+	},
+	{
+		id: 2,
+		title: 'Needs analysis',
+		text: 'We will conduct a needs analysis to tailor our services to your specific requirements.',
+	},
+	{
+		id: 3,
+		title: 'Proposal',
+		text: 'We will send you a personalised proposal outlining your needs, timeline, and project scope.',
+	},
+	{
+		id: 4,
+		title: 'Project timeline',
+		text: 'After accepting the proposal, we will work with you to organise a project timeline.',
+	},
+	{
+		id: 5,
+		title: 'Come to Life',
+		text: 'You will witness your project come to life in English and be able to confidently talk about it! ',
+	},
 ];
 ---
 
-<section id="services" class="pb-[5rem] bg-white">
-    <header class=" pb-[10px] pt-[5rem]">
-        <h1 class="text-foreground text-center text-6xl font-Baloo font-bold ">Services</h1>
-        <div class="flex justify-center  h-[30px]  py-[50px] px-[30px] box-content ">
-            <p class=" text-xl font-semibold ">Are you</p>
-            <div class="words overflow-y-hidden">
-                <span class="block h-full pl-[7px]  animate-words text-darkOrange text-xl">an entrepreneur?</span>
-                <span class="block h-full pl-[7px]  animate-words  text-darkOrange text-xl">a musician?</span>
-                <span class="block h-full pl-[7px]  animate-words  text-darkOrange text-xl">an artist?</span>
-                <span class="block h-full pl-[7px]  animate-words  text-darkOrange text-xl">a project leader?</span>
-                <span class="block h-full pl-[7px]  animate-words  text-darkOrange text-xl">an entrepreneur?</span>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <section class="py-[5rem]">
-            <h2 class="text-center font-semibold font-Baloo text-[2rem]">One-to-one</h2>
-            <div class="grid grid-cols-2 items-center max-w-[1100px] mx-auto">
-                <div class=" flex">
-                    <ul class="bg-darkRed rounded-full w-[200px] h-[200px] flex justify-center items-center flex-col text-background">
-                        <li>Somenthing</li>
-                        <li>Somenthing</li>
-                        <li>Somenthing</li>
-                    </ul>
-                    <ul class="bg-lightRed rounded-full w-[200px] h-[200px] flex justify-center items-center flex-col text-background">
-                        <li>Somenthing</li>
-                        <li>Somenthing</li>
-                        <li>Somenthing</li>
-                    </ul>
-                </div>
-                <div class="wrap-accordion">
-                    <Accordion data={data} client:idle />
-                </div>
-              
-            </div>
-        </section>
-
-        <a href="/survey" class="block font-semibold bg-darkBlue text-background py-3 px-6 rounded-xl mt-[4rem] mx-auto w-fit hover:opacity-70">Join Forces</a>
-    </div>
+<section id="services" class="">
+	<div class="bg-white py-24">
+		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
+			<h1
+				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
+			>
+				What we do
+			</h1>
+			<div
+				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-6"
+			>
+				{dataCardInfo.map((item) => <CardInfo card={item} />)}
+			</div>
+		</div>
+	</div>
+	<div class="bg-background py-24">
+		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
+			<h1
+				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
+			>
+				How we do it
+			</h1>
+			<div
+				class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
+			>
+				{
+					dataCardSteps.map((item) => (
+						<CardStep
+							id={item.id}
+							title={item.title}
+							text={item.text}
+						/>
+					))
+				}
+				<article class="bg-darkGreen p-6 text-background">
+					<h2 class="text-3xl text-balance font-bold mb-4">
+						Are you ready to get started?
+					</h2>
+					<DialogCalendly client:load />
+				</article>
+			</div>
+		</div>
+	</div>
 </section>
