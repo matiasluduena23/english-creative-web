@@ -1,18 +1,27 @@
 ---
-import { Image } from "astro:assets"
-import video from '@/assets/video.jpg'
+import { Image } from 'astro:assets';
+import video from '@/assets/video.jpg';
 ---
 
-<section id="home" class="bg-[url('/showcase.svg')] bg-no-repeat bg-cover bg-center py-24">
-    <div class="container">
-        <h1 class="text-foreground text-center text-6xl font-Baloo font-bold ">
-            <span class="text-softRed">Impact</span> the world with your
-            <span class="text-softRed">ideas</span>
-        </h1>
+<section
+	id="home"
+	class="bg-[url('/showcase.svg')] bg-no-repeat bg-cover bg-center pt-12 md:pt-24"
+>
+	<div class="container">
+		<h1
+			class="text-4xl text-foreground text-center md:text-6xl font-Baloo font-bold"
+		>
+			<span class="text-darkGreen">Impact</span> the world with your
+			<span class="text-darkGreen">ideas</span>
+		</h1>
 
-        <div class=" max-w-[700px] mx-auto mt-[4rem]">
-            <Image class='rounded-lg' src={video} alt='Janelle video' />
-        </div>
-        <a class="block font-semibold bg-darkBlue text-background py-3 px-6 rounded-xl mt-[4rem] mx-auto w-fit hover:opacity-70" href="#services" class="">Explore your options</a>
-    </div>
+		<div class="mt-8 max-w-[700px] mx-auto md:mt-[4rem]">
+			<Image class="rounded-lg" src={video} alt="Janelle video" />
+		</div>
+		<a
+			class="mt-8 block font-semibold bg-darkOrange text-background py-3 px-6 rounded-xl md:mt-[4rem] mx-auto w-fit hover:opacity-70"
+			href="#services"
+			class="">Explore your options</a
+		>
+	</div>
 </section>

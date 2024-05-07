@@ -1,14 +1,18 @@
 ---
 import logo from '../../assets/logo.png';
 import { Image } from 'astro:assets';
-import Navigation from './Navigation.astro'
+import Navigation from './Navigation.astro';
+import ToggleNavigation from './ToggleNavigation';
 ---
 
 <header class="bg-background container mx-auto p-6">
-    <nav  class="flex justify-between items-center">
-        <a href="#home" class="w-60">
-            <Image src={logo} alt='english creative logo' />
-        </a>
-        <Navigation />
-    </nav>
+	<nav class="flex justify-between items-center">
+		<a href="#home" class="w-60">
+			<Image src={logo} alt="english creative logo" />
+		</a>
+		<Navigation />
+		<div class="md:hidden">
+			<ToggleNavigation client:load />
+		</div>
+	</nav>
 </header>
