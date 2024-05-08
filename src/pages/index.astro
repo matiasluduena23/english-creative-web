@@ -4,6 +4,7 @@ import Header from '@/components/header/Header.astro';
 import Main from '@/components/main/Main.astro';
 import Services from '@/components/services/Services.astro';
 import About from '@/components/about/About.astro';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -12,6 +13,7 @@ import About from '@/components/about/About.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<ViewTransitions />
 		<title>Astro</title>
 	</head>
 	<body class="bg-background text-foreground">

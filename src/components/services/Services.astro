@@ -8,31 +8,42 @@ const dataCardInfo: CardInfo[] = [
 		title: 'Essential',
 		text: 'For short-term needs and one-off tasks',
 		info: {
-			couching:
-				'Refining pitches and presentations, preparing for dream job interviews',
-			translation: `Pitch (up to 5 minutes)\nPitch deck
-Website landing page
-Specific letter or email
-Video subtitles/Photograph captions
-`,
+			couching: [
+				'Refining pitches and presentations',
+				'preparing for dream job interviews',
+			],
+			translation: [
+				'Pitch (up to 5 minutes)',
+				'Pitch deck',
+				'Website landing page',
+				'Specific letter or email',
+				'Video subtitles/Photograph captions',
+			],
 		},
 	},
 	{
 		title: 'Practical',
 		text: 'For med-term needs and project-based tasks',
 		info: {
-			couching:
-				'Developing pitches and presentations, preparing for meetings with investors, producers, sponsors',
-			translation: `Entire website/social media page\nCommunication material: newsletters, social media content`,
+			couching: [
+				'Developing pitches and presentations',
+				'Preparing for meetings with investors, producers, sponsors',
+			],
+			translation: [
+				'Entire website/social media page',
+				'Communication material: newsletters, social media content',
+			],
 		},
 	},
 	{
 		title: 'Tailored',
 		text: 'Good for long-term needs and ongoing task',
 		info: {
-			couching:
-				'Following up with investors, producers, sponsors, and polishing Business English.',
-			translation: 'New or updated communication on an ongoing basis',
+			couching: [
+				'Following up with investors, producers, sponsors',
+				'Polishing Business English.',
+			],
+			translation: ['New or updated communication on an ongoing basis'],
 		},
 	},
 ];
@@ -67,7 +78,7 @@ const dataCardSteps = [
 ---
 
 <section id="services" class="">
-	<div class="bg-white py-24">
+	<div class="bg-white py-32">
 		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
 			<h1
 				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"

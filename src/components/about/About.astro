@@ -1,67 +1,36 @@
 ---
 import { Image } from 'astro:assets';
-import iconHighLeve from '../../assets/highLevel.svg';
-import iconTrustPeople from '../../assets/trustPeople.svg';
-import iconPerson from '../../assets/person.svg';
-import aboutLeftCircle from '../../assets/about-left-image.png';
+import womanTeaching from '@/assets/womanTeaching.jpg';
+import { ChevronRightIcon } from 'lucide-react';
 ---
 
-
-<section id="about" class="pt-[5rem]">
-    <header class="bg-background pb-8">
-        <h1 class="text-darkGreen text-center text-6xl font-Baloo font-bold">
-            We are all <span class="text-softRed">creatives</span> at heart
-        </h1>
-    </header>
-    <div class="bg-darkGreen text-center relative py-[5rem] ">
-        <Image
-            class="absolute -left-10 -top-[140px] w-[300px] hidden lg:block"
-            src={aboutLeftCircle}
-            alt="cirlce"
-        />
-        <div class="container">
-            <ul class="grid grid-cols-3 gap-8 text-xl text-background font-semibold  pt-[5rem]">
-                <li class="flex flex-col items-center">
-                    <div class="">
-                        <Image
-                            class="max-w-[70px]"
-                            src={iconHighLeve}
-                            alt="icon high level"
-                        />
-                    </div>
-                    <p >
-                        Your project deserves our high-end level of English so
-                        that it stands out for the right reasons.
-                    </p>
-                </li>
-                <li class="flex flex-col items-center">
-                    <div class="wrap-image">
-                        <Image
-                            class="max-w-[70px]"
-                            src={iconTrustPeople}
-                            alt="icon trust people"
-                        />
-                    </div>
-                    <p >
-                        We know that one of the most difficult things is to
-                        trust somebody else to work on your project.
-                    </p>
-                </li>
-                <li class="flex flex-col items-center">
-                    <div class="wrap-image">
-                        <Image
-                            class="max-w-[70px]"
-                            src={iconPerson}
-                            alt="icon person "
-                        />
-                    </div>
-
-                    <p>
-                        That’s why we are here, when and where you need us, for
-                        all your English needs.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
+<section id="about" class="py-[5rem] bg-white">
+	<div class="container max-w-[1200px] mx-auto">
+		<div class="grid gap-8 sm:grid-cols-2 sm:items-center">
+			<Image
+				src={womanTeaching}
+				alt="woman teaching english"
+				class="rounded-lg"
+			/>
+			<div class="flex flex-col gap-2 sm:max-w-[450px]">
+				<span
+					class="uppercase bg-darkGreen text-background text-[10px] w-fit px-2 rounded-lg tracking-widest"
+					>About us</span
+				>
+				<h1 class="font-Baloo text-2xl font-semibold md:text-4xl">
+					We are all creatives at heart
+				</h1>
+				<p class="text-gray-500">
+					We know that one of the most difficult parts of expanding
+					your business is to trust somebody else to work alongside
+					you. That’s why we are here, when and where you need us, for
+					all your English needs.
+				</p>
+				<a href="#" class="flex items-center text-darkGreen"
+					><span>About Me</span>
+					<ChevronRightIcon className="w-5 pt-1 " />
+				</a>
+			</div>
+		</div>
+	</div>
 </section>
