@@ -1,6 +1,6 @@
 ---
 import '../styles/globals.css';
-import Header from '@/components/header/Header.astro';
+import Header from '@/components/header/Header.tsx';
 import Main from '@/components/main/Main.astro';
 import Services from '@/components/services/Services.astro';
 import About from '@/components/about/About.astro';
@@ -18,7 +18,7 @@ import { ViewTransitions } from 'astro:transitions';
 		<title>Astro</title>
 	</head>
 	<body class="bg-background text-foreground">
-		<Header />
+		<Header client:load />
 		<Main />
 		<Services />
 		<About />

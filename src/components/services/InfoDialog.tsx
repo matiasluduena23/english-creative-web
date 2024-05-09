@@ -2,7 +2,6 @@ import { Button } from '@/components/ui/button';
 import {
 	Dialog,
 	DialogContent,
-	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
@@ -29,8 +28,11 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 					<div className="">
 						<h3 className="font-semibold mb-2">English Couching</h3>
 						<ul>
-							{info.couching.map((item) => (
-								<li className="flex items-center gap-1">
+							{info.couching.map((item, index) => (
+								<li
+									key={index}
+									className="flex items-center gap-1"
+								>
 									<CheckIcon className="w-4 text-background" />
 									<p>{item}</p>
 								</li>
@@ -44,8 +46,11 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 							English Translation
 						</h3>
 						<ul>
-							{info.translation.map((item) => (
-								<li className="flex items-center gap-1">
+							{info.translation.map((item, index) => (
+								<li
+									key={index}
+									className="flex items-center gap-1"
+								>
 									<CheckIcon className="w-4 text-background" />
 									<p>{item}</p>
 								</li>
