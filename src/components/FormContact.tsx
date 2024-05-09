@@ -48,7 +48,7 @@ export function FormContact() {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-8 text-background font-OpenSans"
+				className="space-y-8 text-background font-OpenSans sm:w-[50%]"
 			>
 				<h1 className="font-Baloo text-3xl font-semibold">
 					Get in Touch
@@ -58,7 +58,7 @@ export function FormContact() {
 						control={form.control}
 						name="name"
 						render={({ field }) => (
-							<FormItem>
+							<FormItem className="w-[50%]">
 								<FormLabel>Name</FormLabel>
 								<FormControl>
 									<Input
@@ -75,7 +75,7 @@ export function FormContact() {
 						control={form.control}
 						name="email"
 						render={({ field }) => (
-							<FormItem>
+							<FormItem className="w-[50%]">
 								<FormLabel>Email</FormLabel>
 								<FormControl>
 									<Input
@@ -108,9 +108,10 @@ export function FormContact() {
 				/>
 				<Button
 					type="submit"
-					className="bg-darkOrange text-background flex gap-2 hover:opacity-80"
+					className="bg-darkOrange text-background px-8 flex gap-2 hover:opacity-80 rounded-sm"
 				>
-					<span>Send</span> <MailIcon className="w-4" />
+					<span className="font-semibold text-base">Send</span>{' '}
+					<MailIcon className="w-5" />
 				</Button>
 			</form>
 		</Form>

@@ -80,13 +80,17 @@ const dataCardSteps = [
 <section id="services" class="">
 	<div class="bg-white py-32">
 		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
+			<span
+				class="uppercase bg-darkGreen text-background text-[10px] w-fit px-2 rounded-lg tracking-widest pb-[1px]"
+				>Services</span
+			>
 			<h1
-				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
+				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl mt-2"
 			>
 				What we do
 			</h1>
 			<div
-				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-6"
+				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
 			>
 				{dataCardInfo.map((item) => <CardInfo card={item} />)}
 			</div>

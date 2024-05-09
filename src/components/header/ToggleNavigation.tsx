@@ -53,12 +53,18 @@ export default function ToggleNavigation() {
 						</a>
 					</li>
 					<li>
-						<a className="hover:opacity-70" href="">
+						<a
+							className="hover:opacity-70"
+							href=""
+							onClick={() => setOpen(!open)}
+						>
 							Podcast
 						</a>
 					</li>
 					<li>
-						<a href="">Contact</a>
+						<a href="#contact" onClick={() => setOpen(!open)}>
+							Contact
+						</a>
 					</li>
 				</ul>
 			</SheetContent>
