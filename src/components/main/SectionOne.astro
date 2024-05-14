@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import CardMain from './CardMain.astro';
-import curvedArrow from '@/assets/curvedArrow.png';
+
 const data = [
 	{
 		id: 1,
@@ -18,15 +18,15 @@ const data = [
 ];
 ---
 
-<section class="relative mb-24">
-	<Image
+<section class="relative py-24 bg-white">
+	<!-- <Image
 		src={curvedArrow}
 		alt="descriptive text"
 		width="140"
 		height="150"
-		class="rotate-30 mx-auto"
+		class="absolute left-1/2 -translate-x-1/2 -top-12 rotate-30 mx-auto"
 		loading="eager"
-	/>
+	/> -->
 
 	<h2
 		class="text-2xl text-center font-OpenSans mb-6 md:text-4xl md:mb-12 max-w-[480px] mx-auto"

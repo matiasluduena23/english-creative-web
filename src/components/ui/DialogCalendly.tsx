@@ -17,21 +17,14 @@ export function DialogCalendly() {
 					Book your call
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-[800px] bg-white">
+			<DialogContent className="sm:max-w-[800px] bg-background">
 				<DialogHeader>
 					<DialogTitle className="text-center font-Baloo text-2xl text-foreground">
 						Calendly
 					</DialogTitle>
 				</DialogHeader>
 
-				<InlineWidget
-					url="https://calendly.com/matiaslredes/course?hide_event_type_details=1&hide_gdpr_banner=1&background_color=f4f4f4&primary_color=003fd1"
-					// prefill={{
-					//     customAnswers: {
-					//         a1: interestFormat,
-					//     },
-					// }}
-				/>
+				<InlineWidget url="https://calendly.com/englishcreativehub/introductory-call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=FFFFFF&primary_color=09564E" />
 				<DialogFooter></DialogFooter>
 			</DialogContent>
 		</Dialog>
