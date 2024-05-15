@@ -1,8 +1,8 @@
-import NavLinks from './NavLinks';
+'use client';
 import logo from '../../assets/logo.png';
-import ToggleNavigation from './ToggleNavigation';
 import clsx from 'clsx';
 import { useShadowNavigation, useShowNavigation } from '@/lib/hooks';
+import Navigation from './Navigation';
 
 export default function Header() {
 	const show = useShowNavigation();
@@ -24,10 +24,8 @@ export default function Header() {
 						loading="eager"
 					/>
 				</a>
-				<NavLinks />
-				<div className="md:hidden">
-					<ToggleNavigation />
-				</div>
+
+				<Navigation />
 			</nav>
 		</header>
 	);
