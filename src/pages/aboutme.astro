@@ -3,6 +3,10 @@ import { ViewTransitions } from 'astro:transitions';
 import '../styles/globals.css';
 import { Image } from 'astro:assets';
 import janellePinkbg from '@/assets/janellePinkBg.jpeg';
+import janelleRowing from '@/assets/janelleRowing.jpg';
+import janelleSining from '@/assets/janelleSining.jpg';
+import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
+import { HeartIcon } from 'lucide-react';
 ---
 
 <html lang="en" class="scroll-smooth scroll-pt-[5rem]">
@@ -15,13 +19,13 @@ import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 		<title>Astro</title>
 	</head>
 	<body class="bg-background text-foreground">
-		<div class="container mx-auto relative max-w-[1200px]">
+		<div class="container mx-auto relative max-w-[1100px] py-[5rem]">
 			<!-- Section One -->
 			<div
-				class="flex flex-col sm:items-end sm:flex-row gap-6 my-12 md:gap-12 md:my-[7rem]"
+				class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 md:my-[7rem]"
 			>
 				<div
-					class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:left-1/2 top-16 sm:-translate-x-1/4 lg:text-5xl"
+					class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:left-1/2 top-56 sm:-translate-x-1/4 lg:text-5xl"
 				>
 					<h1 class="bg-white pt-3 mb-2 w-fit px-2">
 						Hi, I'm Janelle and I am
@@ -35,7 +39,8 @@ import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 					<div class="max-w-[300px]">
 						<Image
 							src={janellePinkbg}
-							alt="janelle profile picture"
+							alt="janelle profile pink background"
+							loading="eager"
 						/>
 					</div>
 				</div>
@@ -53,37 +58,148 @@ import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 
 		<!-- Section Two -->
 		<div class="bg-white py-[5rem]">
-			<div class="container">
+			<div class="container max-w-[1100px]">
 				<div class="font-Baloo text-darkOrange font-bold text-3xl mb-8">
 					<h1 class="bg-darkOrange text-white pt-3 mb-2 w-fit px-2">
 						How I started...
 					</h1>
 				</div>
-				<div class="flex flex-col gap-4">
-					<p>
-						I never imagined becoming a passionate English Coach for
-						Spanish speakers worldwide, but looking back, it all
-						makes sense. As a teenager, I dreamed of learning
-						Spanish because salsa music moved me. Returning from
-						volunteering in Peru and completing an Event Management
-						course as a young adult, I was inspired to work with
-						projects aiming to make a positive global impact.
-					</p>
-					<p>
-						Travelling through Central and South America as a novice
-						documentary maker, I witnessed incredible initiatives
-						being created around me. I longed to see these projects
-						reach a global audience. During my Bachelor of Arts
-						International in Australia where I studied Spanish and
-						Latin American studies and Anthropology, I was struck by
-						how intertwined language is with culture and our
-						interpretation of the world.
-					</p>
-					<p>
-						Settling in Argentina opened the door to my career in
-						English mentoring. I now have the pleasure of using my
-						experience, talents, and curiosity to share what I love.
-					</p>
+				<div class="grid sm:grid-cols-2 gap-8 mt-12">
+					<div class="flex flex-col gap-8">
+						<p>
+							I never imagined becoming a passionate English Coach
+							for Spanish speakers worldwide, but looking back, it
+							all makes sense. As a teenager, I dreamed of
+							learning Spanish because salsa music moved me.
+							Returning from volunteering in Peru and completing
+							an Event Management course as a young adult, I was
+							inspired to work with projects aiming to make a
+							positive global impact.
+						</p>
+						<p>
+							Travelling through Central and South America as a
+							novice documentary maker, I witnessed incredible
+							initiatives being created around me. I longed to see
+							these projects reach a global audience. During my
+							Bachelor of Arts International in Australia where I
+							studied Spanish and Latin American studies and
+							Anthropology, I was struck by how intertwined
+							language is with culture and our interpretation of
+							the world.
+						</p>
+						<p>
+							Settling in Argentina opened the door to my career
+							in English mentoring. I now have the pleasure of
+							using my experience, talents, and curiosity to share
+							what I love.
+						</p>
+					</div>
+					<div class="max-h-[500px]">
+						<Image
+							src={janelleTakingPhoto}
+							alt="janelle taking a photograph"
+							class="h-full object-contain"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section Three -->
+		<div class="bg-background py-[5rem]">
+			<div class="container max-w-[1100px]">
+				<h1
+					class="flex flex-col gap-2 font-Baloo text-darkOrange font-bold text-3xl mb-8 md:items-center"
+				>
+					<div>
+						<span
+							class="inline-block text-darkOrange pt-3 bg-white w-fit px-2"
+							>What does</span
+						><span
+							class="inline-block bg-darkOrange pt-3 text-white w-fit px-2"
+							>creativity</span
+						>
+					</div>
+
+					<span
+						class="inline-block text-darkOrange pt-3 bg-white w-fit px-2 md:text-end"
+						>mean to me?</span
+					>
+				</h1>
+
+				<div
+					class="md:grid grid-cols-10 gap-4 grid-rows-[1fr_1fr_1fr_1fr_1fr_1rf_1rf]"
+				>
+					<div
+						class="p-4 bg-lightOrange col-start-3 col-end-6 row-start-1 row-end-5"
+					>
+						<Image
+							src={janelleSining}
+							alt="janelle sining in a band"
+							class="object-cover w-auto h-auto ml-auto"
+						/>
+					</div>
+					<ul
+						class="flex flex-col gap-4 my-8 col-start-6 col-end-11 row-start-1 row-end-5 justify-start"
+					>
+						<li class="flex items-center gap-2">
+							<div class="size-6">
+								<HeartIcon />
+							</div>
+							<span
+								><span class="font-bold">Transformation:</span> The
+								power to transform, not just do something new</span
+							>
+						</li>
+						<li class="flex items-center gap-2">
+							<div class="size-6">
+								<HeartIcon />
+							</div>
+							<span
+								><span class="font-bold">Exploration:</span> I’ve
+								visited 33 countries, and lived in 9 of them.</span
+							>
+						</li>
+
+						<li class="flex items-center gap-2">
+							<div class="size-6">
+								<HeartIcon />
+							</div>
+							<span
+								><span class="font-bold">Self-expression:</span>
+								In my free time, you’ll find me at the local rowing
+								club or singing with my band!</span
+							>
+						</li>
+
+						<li class="flex items-center gap-2">
+							<div class="size-6">
+								<HeartIcon />
+							</div>
+							<span
+								><span class="font-bold">Stimulation:</span> I haven’t
+								owned a television since I was 21 years old…
+							</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<div class="size-6">
+								<HeartIcon />
+							</div>
+							<span
+								><span class="font-bold">Creating value:</span> through
+								interaction</span
+							>
+						</li>
+					</ul>
+					<div
+						class="p-4 bg-white flex items-center justify-center col-start-4 col-end-8 row-start-4 row-end-7"
+					>
+						<Image
+							src={janelleRowing}
+							alt="janelle rowing in the lake"
+							class="object-cover w-auto h-full"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
