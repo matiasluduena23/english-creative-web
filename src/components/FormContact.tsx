@@ -110,10 +110,7 @@ export default function FormContact() {
 						</FormItem>
 					)}
 				/>
-				<Button
-					type="submit"
-					className="bg-darkOrange text-background px-8 flex gap-2 hover:opacity-80 rounded-sm"
-				>
+				<Button type="submit">
 					<span className="font-semibold text-base">Send</span>{' '}
 					<MailIcon className="w-5" />
 				</Button>

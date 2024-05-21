@@ -1,0 +1,51 @@
+---
+import MaterialMail from './MaterialMail.astro';
+---
+
+<form
+	name="contact"
+	method="POST"
+	data-netlify="true"
+	class="text-background sm:w-[50%]"
+>
+	<h1 class="font-Baloo text-3xl font-semibold mb-8">Get in Touch</h1>
+	<div class="flex gap-4 mb-4">
+		<div class="flex flex-col w-full gap-1">
+			<label for="name">Name </label>
+			<input
+				type="text"
+				name="name"
+				placeholder="Janelle French"
+				class="font-OpenSans text-foreground flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+				required
+			/>
+		</div>
+		<div class="flex flex-col w-full gap-1">
+			<label for="email">Email </label>
+			<input
+				type="email"
+				name="email"
+				placeholder="jfrench@gmail.com"
+				class="font-OpenSans text-foreground flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+				required
+			/>
+		</div>
+	</div>
+	<div class="flex flex-col w-full gap-1">
+		<label for="message">Message </label>
+		<textarea
+			name="message"
+			placeholder="Tell me a little bit about the services"
+			class="font-OpenSans text-foreground flex min-h-[80px] w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+			required></textarea>
+	</div>
+	<p>
+		<button
+			type="submit"
+			class="bg-darkOrange text-background px-8 py-2 flex items-center gap-2 hover:opacity-80 rounded-sm mt-8 font-semibold"
+		>
+			<span>Send</span>
+			<MaterialMail />
+		</button>
+	</p>
+</form>
