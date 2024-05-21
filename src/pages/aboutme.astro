@@ -4,7 +4,7 @@ import '../styles/globals.css';
 import { Image } from 'astro:assets';
 import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 import janelleRowing from '@/assets/janelleRowing.jpg';
-import janelleSining from '@/assets/janelleSining.jpg';
+import janelleSinging from '@/assets/janelleSinging.jpg';
 import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 import { HeartIcon } from 'lucide-react';
 ---
@@ -16,10 +16,15 @@ import { HeartIcon } from 'lucide-react';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<ViewTransitions />
-		<title>Astro</title>
+		<title>English Creative</title>
 	</head>
-	<body class="bg-background text-foreground">
+	<body class="bg-background text-foreground relative">
 		<div class="container mx-auto relative max-w-[1100px] py-[5rem]">
+			<a
+				href="/"
+				class="block font-semibold bg-darkGreen text-background py-2 px-4 rounded-sm mx-auto w-fit hover:opacity-70 fixed right-4 bottom-3"
+				>Go back</a
+			>
 			<!-- Section One -->
 			<div
 				class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 md:my-[7rem]"
@@ -128,13 +133,13 @@ import { HeartIcon } from 'lucide-react';
 				</h1>
 
 				<div
-					class="md:grid grid-cols-10 gap-4 grid-rows-[1fr_1fr_1fr_1fr_1fr_1rf_1rf]"
+					class="md:grid grid-cols-10 gap-4 grid-rows-[1fr_1fr_1fr_1fr_1fr_1rf_1rf,1fr]"
 				>
 					<div
-						class="p-4 bg-lightOrange col-start-3 col-end-6 row-start-1 row-end-5"
+						class="p-4 bg-lightOrange col-start-1 col-end-6 row-start-1 row-end-5"
 					>
 						<Image
-							src={janelleSining}
+							src={janelleSinging}
 							alt="janelle sining in a band"
 							class="object-cover w-auto h-auto ml-auto"
 						/>
@@ -192,7 +197,7 @@ import { HeartIcon } from 'lucide-react';
 						</li>
 					</ul>
 					<div
-						class="p-4 bg-white flex items-center justify-center col-start-4 col-end-8 row-start-4 row-end-7"
+						class="p-4 bg-white flex items-center justify-center col-start-6 col-end-11 row-start-5 row-end-8"
 					>
 						<Image
 							src={janelleRowing}

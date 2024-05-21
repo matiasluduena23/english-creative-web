@@ -17,7 +17,7 @@ export default function NavLinks() {
 				</a>
 			</li>
 			<li>
-				<a className="hover:opacity-70" href="">
+				<a className="hover:opacity-70" href="/podcast/">
 					Podcast
 				</a>
 			</li>
