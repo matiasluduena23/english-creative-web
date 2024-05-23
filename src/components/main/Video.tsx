@@ -1,5 +1,5 @@
 import { PlayIcon } from 'lucide-react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ReactPlayerYoutube from 'react-player/youtube';
 
 export default function Video() {
