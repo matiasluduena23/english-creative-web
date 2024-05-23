@@ -1,4 +1,3 @@
-import { Image } from 'astro:assets';
 import { PlayIcon } from 'lucide-react';
 import React, { useState } from 'react';
 import ReactPlayerYoutube from 'react-player/youtube';

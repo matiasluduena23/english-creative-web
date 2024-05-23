@@ -114,7 +114,7 @@ import { HeartIcon } from 'lucide-react';
 		<div class="bg-background py-[5rem]">
 			<div class="container max-w-[1100px]">
 				<h1
-					class="flex flex-col gap-2 font-Baloo text-darkOrange font-bold text-3xl mb-8 md:items-center"
+					class="flex flex-col gap-2 font-Baloo text-darkOrange font-bold text-3xl mb-16 md:items-center"
 				>
 					<div>
 						<span
@@ -133,71 +133,99 @@ import { HeartIcon } from 'lucide-react';
 				</h1>
 
 				<div
-					class="md:grid grid-cols-10 gap-4 grid-rows-[1fr_1fr_1fr_1fr_1fr_1rf_1rf,1fr]"
+					class="flex flex-col sm:flex-row sm:items-center sm:gap-12"
 				>
-					<div
-						class="p-4 bg-lightOrange col-start-1 col-end-6 row-start-1 row-end-5"
-					>
+					<div class="p-4 bg-lightOrange sm:w-[50%]">
 						<Image
 							src={janelleSinging}
 							alt="janelle sining in a band"
-							class="object-cover w-auto h-auto ml-auto"
+							class="object-cover w-auto h-auto"
 						/>
 					</div>
 					<ul
-						class="flex flex-col gap-4 my-8 col-start-6 col-end-11 row-start-1 row-end-5 justify-start"
+						class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
 					>
-						<li class="flex items-center gap-2">
-							<div class="size-6">
-								<HeartIcon />
+						<li class="flex flex-col items-center text-center">
+							<div class="flex place-items-center gap-2">
+								<div class="size-6 mb-2">
+									<HeartIcon />
+								</div>
+								<span class="font-bold uppercase font-Baloo"
+									>Transformation</span
+								>
 							</div>
-							<span
-								><span class="font-bold">Transformation:</span> The
-								power to transform, not just do something new</span
-							>
-						</li>
-						<li class="flex items-center gap-2">
-							<div class="size-6">
-								<HeartIcon />
-							</div>
-							<span
-								><span class="font-bold">Exploration:</span> I’ve
-								visited 33 countries, and lived in 9 of them.</span
-							>
-						</li>
 
-						<li class="flex items-center gap-2">
-							<div class="size-6">
-								<HeartIcon />
-							</div>
-							<span
-								><span class="font-bold">Self-expression:</span>
-								In my free time, you’ll find me at the local rowing
-								club or singing with my band!</span
+							<span>
+								The power to transform, not just do something
+								new</span
 							>
 						</li>
+						<li class="flex flex-col items-center text-center">
+							<div class="flex place-items-center gap-2">
+								<div class="size-6 mb-2">
+									<HeartIcon />
+								</div>
+								<span class="font-bold uppercase font-Baloo"
+									>Exploration</span
+								>
+							</div>
 
-						<li class="flex items-center gap-2">
-							<div class="size-6">
-								<HeartIcon />
-							</div>
-							<span
-								><span class="font-bold">Stimulation:</span> I haven’t
-								owned a television since I was 21 years old…
-							</span>
+							<span>
+								I’ve visited 33 countries, and lived in 9 of
+								them.</span
+							>
 						</li>
-						<li class="flex items-center gap-2">
-							<div class="size-6">
-								<HeartIcon />
+						<li class="flex flex-col items-center text-center">
+							<div class="flex place-items-center gap-2">
+								<div class="size-6 mb-2">
+									<HeartIcon />
+								</div>
+								<span class="font-bold uppercase font-Baloo"
+									>Self-expression</span
+								>
 							</div>
-							<span
-								><span class="font-bold">Creating value:</span> through
-								interaction</span
+
+							<span>
+								In my free time, you’ll find me at the local
+								rowing club or singing with my band!</span
 							>
 						</li>
 					</ul>
+				</div>
+				<div class="flex flex-col-reverse sm:flex-row sm:items-center">
+					<ul
+						class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
+					>
+						<li class="flex flex-col items-center text-center">
+							<div class="flex place-items-center gap-2">
+								<div class="size-6 mb-2">
+									<HeartIcon />
+								</div>
+								<span class="font-bold uppercase font-Baloo"
+									>Stimulation</span
+								>
+							</div>
+
+							<span>
+								I haven’t owned a television since I was 21
+								years old…</span
+							>
+						</li>
+						<li class="flex flex-col items-center text-center">
+							<div class="flex place-items-center gap-2">
+								<div class="size-6 mb-2">
+									<HeartIcon />
+								</div>
+								<span class="font-bold uppercase font-Baloo"
+									>Creating value</span
+								>
+							</div>
+
+							<span> through interaction</span>
+						</li>
+					</ul>
 					<div
-						class="p-4 bg-white flex items-center justify-center col-start-6 col-end-11 row-start-5 row-end-8"
+						class="p-4 bg-white flex items-center justify-center sm:w-[50%]"
 					>
 						<Image
 							src={janelleRowing}
