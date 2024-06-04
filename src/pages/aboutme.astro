@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions, fade } from 'astro:transitions';
 import '../styles/globals.css';
 import { Image } from 'astro:assets';
 import janellePinkbg from '@/assets/janellePinkBg.jpeg';
@@ -20,8 +20,8 @@ import { HeartIcon } from 'lucide-react';
 			content="Meet Janelle, your English coach. Learn how we help Spanish-speaking creators make a global impact with our English mentoring and translation services."
 		/>
 
-		<ViewTransitions />
 		<title>About Us | English Creative</title>
+		<ViewTransitions />
 	</head>
 	<body class="bg-background text-foreground relative">
 		<div class="container mx-auto relative max-w-[1100px] py-[5rem]">
@@ -36,6 +36,7 @@ import { HeartIcon } from 'lucide-react';
 			>
 				<div
 					class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:left-1/2 top-56 sm:-translate-x-1/4 lg:text-5xl"
+					transition:animate={fade({ duration: '0.5s' })}
 				>
 					<h1 class="bg-white pt-3 mb-2 w-fit px-2">
 						Hi, I'm Janelle and I am

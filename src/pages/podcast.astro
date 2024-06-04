@@ -1,6 +1,6 @@
 ---
 import '../styles/globals.css';
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions, slide } from 'astro:transitions';
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -9,13 +9,16 @@ import { ViewTransitions } from 'astro:transitions';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<ViewTransitions />
 		<title>English Creative | Podcast</title>
+		<ViewTransitions />
 	</head>
 	<body class="bg-background text-foreground">
 		<div class="grid content-center min-h-screen">
 			<div class="container mx-auto text-center">
-				<h1 class="font-Baloo text-3xl font-bold mb-4">
+				<h1
+					class="font-Baloo text-4xl font-bold mb-4"
+					transition:animate={slide({ duration: '0.5s' })}
+				>
 					Stay tuned for our upcoming episodes!
 				</h1>
 				<a
