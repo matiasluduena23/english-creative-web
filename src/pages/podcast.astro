@@ -1,6 +1,5 @@
 ---
 import '../styles/globals.css';
-import { ViewTransitions, slide } from 'astro:transitions';
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -10,15 +9,11 @@ import { ViewTransitions, slide } from 'astro:transitions';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>English Creative | Podcast</title>
-		<ViewTransitions />
 	</head>
 	<body class="bg-background text-foreground">
 		<div class="grid content-center min-h-screen">
 			<div class="container mx-auto text-center">
-				<h1
-					class="font-Baloo text-4xl font-bold mb-4"
-					transition:animate={slide({ duration: '0.5s' })}
-				>
+				<h1 class="font-Baloo text-4xl font-bold mb-4">
 					Stay tuned for our upcoming episodes!
 				</h1>
 				<a
