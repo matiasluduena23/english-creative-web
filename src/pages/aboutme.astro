@@ -1,5 +1,6 @@
 ---
 import '../styles/globals.css';
+import Layout from '@/layout/Layout.astro';
 import { Image } from 'astro:assets';
 import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 import janelleRowing from '@/assets/janelleRowing.jpg';
@@ -8,235 +9,215 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 import { HeartIcon } from 'lucide-react';
 ---
 
-<html lang="en" class="scroll-smooth scroll-pt-[5rem]">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta
-			name="description"
-			content="Meet Janelle, your English coach. Learn how we help Spanish-speaking creators make a global impact with our English mentoring and translation services."
-		/>
-		<title>About Us | English Creative</title>
-	</head>
-	<body class="bg-background text-foreground relative">
-		<div class="container mx-auto relative max-w-[1100px] py-[5rem]">
-			<a
-				href="/"
-				class="block font-semibold bg-darkGreen text-background py-2 px-4 rounded-sm mx-auto w-fit hover:opacity-70 fixed right-4 bottom-3"
-				>Go back</a
-			>
-			<!-- Section One -->
+<Layout title="About Us | English Creative">
+	<div class="container mx-auto relative max-w-[1100px] py-[5rem]">
+		<a
+			href="/"
+			class="block font-semibold bg-darkGreen text-background py-2 px-4 rounded-sm mx-auto w-fit hover:opacity-70 fixed right-4 bottom-3"
+			>Go back</a
+		>
+		<!-- Section One -->
+		<div
+			class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 md:my-[7rem]"
+		>
 			<div
-				class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 md:my-[7rem]"
+				class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:left-1/2 top-56 sm:-translate-x-1/4 lg:text-5xl"
 			>
-				<div
-					class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:left-1/2 top-56 sm:-translate-x-1/4 lg:text-5xl"
-				>
-					<h1 class="bg-white pt-3 mb-2 w-fit px-2">
-						Hi, I'm Janelle and I am
-					</h1>
-					<h1 class="bg-white pt-3 w-fit px-2">a English Teacher</h1>
-				</div>
-
-				<div
-					class="p-12 bg-lightOrange border-[5px] border-white max-w-[700px] sm:h-[500px] sm:w-[50%] flex justify-center items-center"
-				>
-					<div class="max-w-[300px]">
-						<Image
-							src={janellePinkbg}
-							alt="janelle profile pink background"
-							loading="eager"
-						/>
-					</div>
-				</div>
-				<div
-					class="text-center font-semibold font-Baloo text-xl sm:w-[50%] sm:pb-[4rem] md:max-w-[400px] md:text-2xl"
-				>
-					<p>
-						"You can't connect the dots looking forward... you can
-						only connect them looking backwards"
-					</p>
-					<p>Steve Jobs</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Section Two -->
-		<div class="bg-white py-[5rem]">
-			<div class="container max-w-[1100px]">
-				<div class="font-Baloo text-darkOrange font-bold text-3xl mb-8">
-					<h1 class="bg-darkOrange text-white pt-3 mb-2 w-fit px-2">
-						How I started...
-					</h1>
-				</div>
-				<div class="grid sm:grid-cols-2 gap-8 mt-12">
-					<div class="flex flex-col gap-8">
-						<p>
-							I never imagined becoming a passionate English Coach
-							for Spanish speakers worldwide, but looking back, it
-							all makes sense. As a teenager, I dreamed of
-							learning Spanish because salsa music moved me.
-							Returning from volunteering in Peru and completing
-							an Event Management course as a young adult, I was
-							inspired to work with projects aiming to make a
-							positive global impact.
-						</p>
-						<p>
-							Travelling through Central and South America as a
-							novice documentary maker, I witnessed incredible
-							initiatives being created around me. I longed to see
-							these projects reach a global audience. During my
-							Bachelor of Arts International in Australia where I
-							studied Spanish and Latin American studies and
-							Anthropology, I was struck by how intertwined
-							language is with culture and our interpretation of
-							the world.
-						</p>
-						<p>
-							Settling in Argentina opened the door to my career
-							in English mentoring. I now have the pleasure of
-							using my experience, talents, and curiosity to share
-							what I love.
-						</p>
-					</div>
-					<div class="max-h-[500px]">
-						<Image
-							src={janelleTakingPhoto}
-							alt="janelle taking a photograph"
-							class="h-full object-contain"
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Section Three -->
-		<div class="bg-background py-[5rem]">
-			<div class="container max-w-[1100px]">
-				<h1
-					class="flex flex-col gap-2 font-Baloo text-darkOrange font-bold text-3xl mb-16 md:items-center"
-				>
-					<div>
-						<span
-							class="inline-block text-darkOrange pt-3 bg-white w-fit px-2"
-							>What does</span
-						><span
-							class="inline-block bg-darkOrange pt-3 text-white w-fit px-2"
-							>creativity</span
-						>
-					</div>
-
-					<span
-						class="inline-block text-darkOrange pt-3 bg-white w-fit px-2 md:text-end"
-						>mean to me?</span
-					>
+				<h1 class="bg-white pt-3 mb-2 w-fit px-2">
+					Hi, I'm Janelle and I am
 				</h1>
+				<h1 class="bg-white pt-3 w-fit px-2">a English Teacher</h1>
+			</div>
 
-				<div
-					class="flex flex-col sm:flex-row sm:items-center sm:gap-12"
-				>
-					<div class="p-4 bg-lightOrange sm:w-[50%]">
-						<Image
-							src={janelleSinging}
-							alt="janelle sining in a band"
-							class="object-cover w-auto h-auto"
-						/>
-					</div>
-					<ul
-						class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
-					>
-						<li class="flex flex-col items-center text-center">
-							<div class="flex place-items-center gap-2">
-								<div class="size-6 mb-2">
-									<HeartIcon />
-								</div>
-								<span class="font-bold uppercase font-Baloo"
-									>Transformation</span
-								>
-							</div>
-
-							<span>
-								The power to transform, not just do something
-								new</span
-							>
-						</li>
-						<li class="flex flex-col items-center text-center">
-							<div class="flex place-items-center gap-2">
-								<div class="size-6 mb-2">
-									<HeartIcon />
-								</div>
-								<span class="font-bold uppercase font-Baloo"
-									>Exploration</span
-								>
-							</div>
-
-							<span>
-								I’ve visited 33 countries, and lived in 9 of
-								them.</span
-							>
-						</li>
-						<li class="flex flex-col items-center text-center">
-							<div class="flex place-items-center gap-2">
-								<div class="size-6 mb-2">
-									<HeartIcon />
-								</div>
-								<span class="font-bold uppercase font-Baloo"
-									>Self-expression</span
-								>
-							</div>
-
-							<span>
-								In my free time, you’ll find me at the local
-								rowing club or singing with my band!</span
-							>
-						</li>
-					</ul>
+			<div
+				class="p-12 bg-lightOrange border-[5px] border-white max-w-[700px] sm:h-[500px] sm:w-[50%] flex justify-center items-center"
+			>
+				<div class="max-w-[300px]">
+					<Image
+						src={janellePinkbg}
+						alt="janelle profile pink background"
+						loading="eager"
+					/>
 				</div>
-				<div class="flex flex-col-reverse sm:flex-row sm:items-center">
-					<ul
-						class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
-					>
-						<li class="flex flex-col items-center text-center">
-							<div class="flex place-items-center gap-2">
-								<div class="size-6 mb-2">
-									<HeartIcon />
-								</div>
-								<span class="font-bold uppercase font-Baloo"
-									>Stimulation</span
-								>
-							</div>
+			</div>
+			<div
+				class="text-center font-semibold font-Baloo text-xl sm:w-[50%] sm:pb-[4rem] md:max-w-[400px] md:text-2xl"
+			>
+				<p>
+					"You can't connect the dots looking forward... you can only
+					connect them looking backwards"
+				</p>
+				<p>Steve Jobs</p>
+			</div>
+		</div>
+	</div>
 
-							<span>
-								I haven’t owned a television since I was 21
-								years old…</span
-							>
-						</li>
-						<li class="flex flex-col items-center text-center">
-							<div class="flex place-items-center gap-2">
-								<div class="size-6 mb-2">
-									<HeartIcon />
-								</div>
-								<span class="font-bold uppercase font-Baloo"
-									>Creating value</span
-								>
-							</div>
-
-							<span> through interaction</span>
-						</li>
-					</ul>
-					<div
-						class="p-4 bg-white flex items-center justify-center sm:w-[50%]"
-					>
-						<Image
-							src={janelleRowing}
-							alt="janelle rowing in the lake"
-							class="object-cover w-auto h-full"
-						/>
-					</div>
+	<!-- Section Two -->
+	<div class="bg-white py-[5rem]">
+		<div class="container max-w-[1100px]">
+			<div class="font-Baloo text-darkOrange font-bold text-3xl mb-8">
+				<h1 class="bg-darkOrange text-white pt-3 mb-2 w-fit px-2">
+					How I started...
+				</h1>
+			</div>
+			<div class="grid sm:grid-cols-2 gap-8 mt-12">
+				<div class="flex flex-col gap-8">
+					<p>
+						I never imagined becoming a passionate English Coach for
+						Spanish speakers worldwide, but looking back, it all
+						makes sense. As a teenager, I dreamed of learning
+						Spanish because salsa music moved me. Returning from
+						volunteering in Peru and completing an Event Management
+						course as a young adult, I was inspired to work with
+						projects aiming to make a positive global impact.
+					</p>
+					<p>
+						Travelling through Central and South America as a novice
+						documentary maker, I witnessed incredible initiatives
+						being created around me. I longed to see these projects
+						reach a global audience. During my Bachelor of Arts
+						International in Australia where I studied Spanish and
+						Latin American studies and Anthropology, I was struck by
+						how intertwined language is with culture and our
+						interpretation of the world.
+					</p>
+					<p>
+						Settling in Argentina opened the door to my career in
+						English mentoring. I now have the pleasure of using my
+						experience, talents, and curiosity to share what I love.
+					</p>
+				</div>
+				<div class="max-h-[500px]">
+					<Image
+						src={janelleTakingPhoto}
+						alt="janelle taking a photograph"
+						class="h-full object-contain"
+					/>
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+	</div>
+
+	<!-- Section Three -->
+	<div class="bg-background py-[5rem]">
+		<div class="container max-w-[1100px]">
+			<h1
+				class="flex flex-col gap-2 font-Baloo text-darkOrange font-bold text-3xl mb-16 md:items-center"
+			>
+				<div>
+					<span
+						class="inline-block text-darkOrange pt-3 bg-white w-fit px-2"
+						>What does</span
+					><span
+						class="inline-block bg-darkOrange pt-3 text-white w-fit px-2"
+						>creativity</span
+					>
+				</div>
+
+				<span
+					class="inline-block text-darkOrange pt-3 bg-white w-fit px-2 md:text-end"
+					>mean to me?</span
+				>
+			</h1>
+
+			<div class="flex flex-col sm:flex-row sm:items-center sm:gap-12">
+				<div class="p-4 bg-lightOrange sm:w-[50%]">
+					<Image
+						src={janelleSinging}
+						alt="janelle sining in a band"
+						class="object-cover w-auto h-auto"
+					/>
+				</div>
+				<ul
+					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
+				>
+					<li class="flex flex-col items-center text-center">
+						<div class="flex place-items-center gap-2">
+							<div class="size-6 mb-2">
+								<HeartIcon />
+							</div>
+							<span class="font-bold uppercase font-Baloo"
+								>Transformation</span
+							>
+						</div>
+
+						<span>
+							The power to transform, not just do something new</span
+						>
+					</li>
+					<li class="flex flex-col items-center text-center">
+						<div class="flex place-items-center gap-2">
+							<div class="size-6 mb-2">
+								<HeartIcon />
+							</div>
+							<span class="font-bold uppercase font-Baloo"
+								>Exploration</span
+							>
+						</div>
+
+						<span>
+							I’ve visited 33 countries, and lived in 9 of them.</span
+						>
+					</li>
+					<li class="flex flex-col items-center text-center">
+						<div class="flex place-items-center gap-2">
+							<div class="size-6 mb-2">
+								<HeartIcon />
+							</div>
+							<span class="font-bold uppercase font-Baloo"
+								>Self-expression</span
+							>
+						</div>
+
+						<span>
+							In my free time, you’ll find me at the local rowing
+							club or singing with my band!</span
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="flex flex-col-reverse sm:flex-row sm:items-center">
+				<ul
+					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
+				>
+					<li class="flex flex-col items-center text-center">
+						<div class="flex place-items-center gap-2">
+							<div class="size-6 mb-2">
+								<HeartIcon />
+							</div>
+							<span class="font-bold uppercase font-Baloo"
+								>Stimulation</span
+							>
+						</div>
+
+						<span>
+							I haven’t owned a television since I was 21 years
+							old…</span
+						>
+					</li>
+					<li class="flex flex-col items-center text-center">
+						<div class="flex place-items-center gap-2">
+							<div class="size-6 mb-2">
+								<HeartIcon />
+							</div>
+							<span class="font-bold uppercase font-Baloo"
+								>Creating value</span
+							>
+						</div>
+
+						<span> through interaction</span>
+					</li>
+				</ul>
+				<div
+					class="p-4 bg-white flex items-center justify-center sm:w-[50%]"
+				>
+					<Image
+						src={janelleRowing}
+						alt="janelle rowing in the lake"
+						class="object-cover w-auto h-full"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
