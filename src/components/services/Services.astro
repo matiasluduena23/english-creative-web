@@ -5,45 +5,54 @@ import CardStep from './CardStep.astro';
 
 const dataCardInfo: CardInfo[] = [
 	{
-		title: 'Essential',
+		title: 'Lead',
 		text: 'For short-term needs and one-off tasks',
 		info: {
 			couching: [
-				'Refining pitches and presentations',
-				'preparing for dream job interviews',
+				'Refining pitches and presentations.',
+				'Preparing for dream job interviews.',
 			],
 			translation: [
-				'Pitch (up to 5 minutes)',
-				'Pitch deck',
-				'Website landing page',
-				'Specific letter or email',
-				'Video subtitles/Photograph captions',
+				'Pitches and Pitch decks',
+				'Sales and product landing pages',
+				'Specific letters and emails',
+				'Video subtitles',
+				'Photograph captions',
 			],
 		},
 	},
 	{
-		title: 'Practical',
-		text: 'For med-term needs and project-based tasks',
+		title: 'Build',
+		text: 'For mid-term needs and project-based tasks',
 		info: {
 			couching: [
-				'Developing pitches and presentations',
-				'Preparing for meetings with investors, producers, sponsors',
+				'Developing pitches and presentations.',
+				'Preparing for strategic meetings.',
 			],
 			translation: [
-				'Entire website/social media page',
-				'Communication material: newsletters, social media content',
+				'Entire websites',
+				'Social media profiles',
+				'Communication material:',
+				'Pre-existing newsletters',
+				'Pre-existing social media content',
 			],
 		},
 	},
 	{
-		title: 'Tailored',
-		text: 'Good for long-term needs and ongoing task',
+		title: 'Grow',
+		text: 'Good for long-term needs and ongoing tasks',
 		info: {
 			couching: [
-				'Following up with investors, producers, sponsors',
-				'Polishing Business English.',
+				'Following up with investors, producers, sponsors.',
+				'Polishing your Business English.',
 			],
-			translation: ['New or updated communication on an ongoing basis'],
+			translation: [
+				'New or updated websites',
+				'New or updated',
+				'communication material',
+				'Regular newsletters',
+				'Regular social media content',
+			],
 		},
 	},
 ];
@@ -81,7 +90,7 @@ const dataCardSteps = [
 	<div class="bg-background py-[7rem]">
 		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
 			<span
-				class="uppercase bg-darkGreen text-background text-[10px] w-fit px-2 rounded-lg tracking-widest pb-[1px]"
+				class="uppercase bg-background border border-darkGreen text-darkGreen text-[10px] w-fit px-2 rounded-lg tracking-widest pb-[1px] mb-4 block"
 				>Services</span
 			>
 			<h1

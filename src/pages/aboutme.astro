@@ -2,6 +2,7 @@
 import '../styles/globals.css';
 import Layout from '@/layout/Layout.astro';
 import { Image } from 'astro:assets';
+import starGreen from '@/assets/starGreen.png';
 import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 import janelleRowing from '@/assets/janelleRowing.jpg';
 import janelleSinging from '@/assets/janelleSinging.jpg';
@@ -10,7 +11,7 @@ import { HeartIcon } from 'lucide-react';
 ---
 
 <Layout title="About Us | English Creative">
-	<div class="container mx-auto relative max-w-[1100px] py-[5rem]">
+	<div class="container mx-auto max-w-[1100px] py-[5rem] 2xl:pt-[8rem]">
 		<a
 			href="/"
 			class="block font-semibold bg-darkGreen text-background py-2 px-4 rounded-sm mx-auto w-fit hover:opacity-70 fixed right-4 bottom-3"
@@ -18,19 +19,17 @@ import { HeartIcon } from 'lucide-react';
 		>
 		<!-- Section One -->
 		<div
-			class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 md:my-[7rem]"
+			class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 relative"
 		>
 			<div
-				class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:left-1/2 top-56 sm:-translate-x-1/4 lg:text-5xl"
+				class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:top-[7%] sm:right-[15%] md:left-1/2 md:top-[3rem] md:-translate-x-1/4 lg:top-[99px] lg:text-5xl lg:min-w-[450px]"
 			>
-				<h1 class="bg-white pt-3 mb-2 w-fit px-2">
-					Hi, I'm Janelle and I am
-				</h1>
-				<h1 class="bg-white pt-3 w-fit px-2">a English Teacher</h1>
+				<h1 class="bg-white pt-3 mb-2 w-fit px-2">Hi, I'm Janelle,</h1>
+				<h1 class="bg-white pt-3 w-fit px-2">your English coach</h1>
 			</div>
 
 			<div
-				class="p-12 bg-lightOrange border-[5px] border-white max-w-[700px] sm:h-[500px] sm:w-[50%] flex justify-center items-center"
+				class="p-12 bg-lightOrange border-[5px] border-white max-w-[700px] sm:h-[300px] md:h-[400px] lg:h-[500px] sm:w-[50%] flex justify-center items-center"
 			>
 				<div class="max-w-[300px]">
 					<Image
@@ -41,12 +40,10 @@ import { HeartIcon } from 'lucide-react';
 				</div>
 			</div>
 			<div
-				class="text-center font-semibold font-Baloo text-xl sm:w-[50%] sm:pb-[4rem] md:max-w-[400px] md:text-2xl"
+				class="text-center font-semibold font-Baloo text-xl sm:w-[50%] sm:pb-[2rem] md:pb-[4rem] lg:pb-[7rem] md:max-w-[550px] md:text-xl flex flex-col"
 			>
-				<p>
-					"You can't connect the dots looking forward... you can only
-					connect them looking backwards"
-				</p>
+				<p>"You can't connect the dots looking forward...</p>
+				<p>you can only connect them looking backwards"</p>
 				<p>Steve Jobs</p>
 			</div>
 		</div>
@@ -64,27 +61,29 @@ import { HeartIcon } from 'lucide-react';
 				<div class="flex flex-col gap-8">
 					<p>
 						I never imagined becoming a passionate English Coach for
-						Spanish speakers worldwide, but looking back, it all
-						makes sense. As a teenager, I dreamed of learning
+						Spanish-speaking creators worldwide, but looking back,
+						it all makes sense. As a teenager, I dreamt of speaking
 						Spanish because salsa music moved me. Returning from
 						volunteering in Peru and completing an Event Management
 						course as a young adult, I was inspired to work with
 						projects aiming to make a positive global impact.
 					</p>
 					<p>
+						During my Bachelor of Arts International in Australia
+						where I studied Spanish and Latin American Studies and
+						Anthropology, I was struck by how intertwined language
+						is with culture and our interpretation of the world.
 						Travelling through Central and South America as a novice
-						documentary maker, I witnessed incredible initiatives
-						being created around me. I longed to see these projects
-						reach a global audience. During my Bachelor of Arts
-						International in Australia where I studied Spanish and
-						Latin American studies and Anthropology, I was struck by
-						how intertwined language is with culture and our
-						interpretation of the world.
+						documentary filmmaker, I witnessed incredible
+						initiatives being created around me. I longed to see
+						these projects reach a global audience
 					</p>
 					<p>
 						Settling in Argentina opened the door to my career in
-						English mentoring. I now have the pleasure of using my
-						experience, talents, and curiosity to share what I love.
+						English mentoring and I have been working for over five
+						years with Spanish-speaking creators from around the
+						world using my experience, talents, and curiosity to
+						share what I love… English + Creativity!
 					</p>
 				</div>
 				<div class="max-h-[500px]">
@@ -120,99 +119,95 @@ import { HeartIcon } from 'lucide-react';
 				>
 			</h1>
 
-			<div class="flex flex-col sm:flex-row sm:items-center sm:gap-12">
+			<div class="flex flex-col sm:flex-row sm:items-center">
 				<div class="p-4 bg-lightOrange sm:w-[50%]">
 					<Image
-						src={janelleSinging}
+						src={janelleRowing}
 						alt="janelle sining in a band"
 						class="object-cover w-auto h-auto"
 					/>
 				</div>
 				<ul
-					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
+					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] mx-auto md:space-y-8"
 				>
-					<li class="flex flex-col items-center text-center">
-						<div class="flex place-items-center gap-2">
-							<div class="size-6 mb-2">
-								<HeartIcon />
-							</div>
-							<span class="font-bold uppercase font-Baloo"
-								>Transformation</span
-							>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
 						</div>
-
-						<span>
-							The power to transform, not just do something new</span
-						>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>Being curious</span
+							>
+							<div class="flex flex-col">
+								<span> Asking yourself what lies beyond? </span>
+								<span>What else can I learn?</span>
+							</div>
+						</div>
 					</li>
-					<li class="flex flex-col items-center text-center">
-						<div class="flex place-items-center gap-2">
-							<div class="size-6 mb-2">
-								<HeartIcon />
-							</div>
-							<span class="font-bold uppercase font-Baloo"
-								>Exploration</span
-							>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
 						</div>
-
-						<span>
-							I’ve visited 33 countries, and lived in 9 of them.</span
-						>
-					</li>
-					<li class="flex flex-col items-center text-center">
-						<div class="flex place-items-center gap-2">
-							<div class="size-6 mb-2">
-								<HeartIcon />
-							</div>
-							<span class="font-bold uppercase font-Baloo"
-								>Self-expression</span
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>Exploring the world around you</span
 							>
+							<div class="flex flex-col">
+								<span>
+									I’ve visited 33 countries, and lived in 9
+								</span>
+								<span
+									>of them and grown so much along the way.</span
+								>
+							</div>
 						</div>
-
-						<span>
-							In my free time, you’ll find me at the local rowing
-							club or singing with my band!</span
-						>
 					</li>
 				</ul>
 			</div>
 			<div class="flex flex-col-reverse sm:flex-row sm:items-center">
 				<ul
-					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] md:mx-auto md:space-y-8"
+					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] mx-auto md:space-y-8"
 				>
-					<li class="flex flex-col items-center text-center">
-						<div class="flex place-items-center gap-2">
-							<div class="size-6 mb-2">
-								<HeartIcon />
-							</div>
-							<span class="font-bold uppercase font-Baloo"
-								>Stimulation</span
-							>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
 						</div>
-
-						<span>
-							I haven’t owned a television since I was 21 years
-							old…</span
-						>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>Expressing yourself</span
+							>
+							<div class="flex flex-col">
+								<span>
+									In my free time, you’ll find me at the local
+								</span>
+								<span>rowing club or singing with my band!</span
+								>
+							</div>
+						</div>
 					</li>
-					<li class="flex flex-col items-center text-center">
-						<div class="flex place-items-center gap-2">
-							<div class="size-6 mb-2">
-								<HeartIcon />
-							</div>
-							<span class="font-bold uppercase font-Baloo"
-								>Creating value</span
-							>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
 						</div>
-
-						<span> through interaction</span>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>The power to transform</span
+							>
+							<div class="flex flex-col">
+								<span>not just do something new.</span>
+							</div>
+						</div>
 					</li>
 				</ul>
 				<div
 					class="p-4 bg-white flex items-center justify-center sm:w-[50%]"
 				>
 					<Image
-						src={janelleRowing}
+						src={janelleSinging}
 						alt="janelle rowing in the lake"
 						class="object-cover w-auto h-full"
 					/>
