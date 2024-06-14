@@ -7,15 +7,10 @@ import {
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
+import { GlobeIcon } from 'lucide-react';
+
 import { MenuIcon } from 'lucide-react';
 import { useState } from 'react';
-import { GlobeIcon } from 'lucide-react';
-import {
-	Popover,
-	PopoverContent,
-	PopoverTrigger,
-} from '@/components/ui/popover';
-import { getRelativeLocaleUrl } from 'astro:i18n';
 
 export default function ToggleNavigation() {
 	const [open, setOpen] = useState(false);
@@ -35,17 +30,17 @@ export default function ToggleNavigation() {
 					<ul className=" pt-14 flex flex-col justify-between gap-9 items-center font-Baloo text-xl font-semibold text-background">
 						<li>
 							<a className="hover:opacity-70" href="#services">
-								Services
+								Servicios
 							</a>
 						</li>
 						<li>
 							<a className="hover:opacity-70" href="#about">
-								About
+								Acerca de
 							</a>
 						</li>
 						<li>
 							<a className="hover:opacity-70" href="">
-								Testimonials
+								Testimonios
 							</a>
 						</li>
 						<li>
@@ -54,7 +49,7 @@ export default function ToggleNavigation() {
 							</a>
 						</li>
 						<li>
-							<a href="#contact">Contact</a>
+							<a href="#contact">Contacto</a>
 						</li>
 					</ul>
 				</SheetClose>

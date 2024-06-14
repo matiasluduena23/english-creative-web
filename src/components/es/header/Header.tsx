@@ -1,5 +1,5 @@
 'use client';
-import logo from '../../assets/logo.png';
+import logo from '@/assets/logo.png';
 import clsx from 'clsx';
 import { useShadowNavigation, useShowNavigation } from '@/lib/hooks';
 import Navigation from './Navigation';

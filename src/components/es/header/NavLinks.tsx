@@ -12,24 +12,21 @@ export default function NavLinks() {
 		<ul className="hidden md:flex justify-between gap-9 items-center font-Baloo text-xl pt-4 font-semibold">
 			<li>
 				<a className="hover:opacity-70" href="#services">
-					Services
+					Servicios
 				</a>
 			</li>
 			<li>
 				<a className="hover:opacity-70" href="#about">
-					About
+					Acerca de
 				</a>
 			</li>
 			<li>
 				<a className="hover:opacity-70" href="">
-					Testimonials
+					Testimonios
 				</a>
 			</li>
 			<li>
-				<a
-					className="hover:opacity-70"
-					href={getRelativeLocaleUrl('es', 'podcast')}
-				>
+				<a className="hover:opacity-70" href="/podcast/">
 					Podcast
 				</a>
 			</li>
@@ -38,7 +35,7 @@ export default function NavLinks() {
 					className="bg-background text-darkGreen border border-darkGreen pt-[6px] px-4 rounded-tl-3xl rounded-br-3xl hover:bg-darkGreen hover:text-background transition-colors"
 					href="#contact"
 				>
-					Contact
+					Contacto
 				</a>
 			</li>
 

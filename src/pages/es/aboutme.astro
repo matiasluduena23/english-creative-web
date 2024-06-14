@@ -1,0 +1,224 @@
+---
+import '@/styles/globals.css';
+import Layout from '@/layout/Layout.astro';
+import { Image } from 'astro:assets';
+import starGreen from '@/assets/starGreen.png';
+import janellePinkbg from '@/assets/janellePinkBg.jpeg';
+import janelleRowing from '@/assets/janelleRowing.jpg';
+import janelleSinging from '@/assets/janelleSinging.jpg';
+import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
+import { HeartIcon } from 'lucide-react';
+---
+
+<Layout title="About Us | English Creative">
+	<div class="container mx-auto max-w-[1100px] py-[5rem] 2xl:pt-[8rem]">
+		<a
+			href="/"
+			class="block font-semibold bg-darkGreen text-background py-2 px-4 rounded-sm mx-auto w-fit hover:opacity-70 fixed right-4 bottom-3"
+			>Volver</a
+		>
+		<!-- Section One -->
+		<div
+			class="flex flex-col sm:items-end sm:flex-row gap-6 md:gap-12 relative"
+		>
+			<div
+				class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:top-[7%] sm:right-[15%] md:left-1/2 md:top-[3rem] md:-translate-x-1/4 lg:top-[99px] lg:text-5xl lg:min-w-[450px]"
+			>
+				<h1 class="bg-white pt-3 mb-2 w-fit px-2">
+					Hola, soy Janelle,
+				</h1>
+				<h1 class="bg-white pt-3 w-fit px-2">tu English coach</h1>
+			</div>
+
+			<div
+				class="p-12 bg-lightOrange border-[5px] border-white max-w-[700px] sm:h-[300px] md:h-[400px] lg:h-[500px] sm:w-[50%] flex justify-center items-center"
+			>
+				<div class="max-w-[300px]">
+					<Image
+						src={janellePinkbg}
+						alt="janelle profile pink background"
+						loading="eager"
+					/>
+				</div>
+			</div>
+			<div
+				class="text-center font-semibold font-Baloo text-xl sm:w-[50%] sm:pb-[2rem] md:pb-[4rem] lg:pb-[7rem] md:max-w-[650px] md:text-xl flex flex-col"
+			>
+				<p>"No puedes conectar los puntos mirando hacia adelante...</p>
+				<p>solo puedes conectarlos mirando hacia atrás"</p>
+				<p>Steve Jobs</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section Two -->
+	<div class="bg-white py-[5rem]">
+		<div class="container max-w-[1100px]">
+			<div class="font-Baloo text-darkOrange font-bold text-3xl mb-8">
+				<h1 class="bg-darkOrange text-white pt-3 mb-2 w-fit px-2">
+					Cómo empecé...
+				</h1>
+			</div>
+			<div class="grid sm:grid-cols-2 gap-8 mt-12">
+				<div class="flex flex-col gap-8">
+					<p>
+						Nunca imaginé convertirme en una apasionada Coach de
+						Inglés para creadores de habla hispana en todo el mundo,
+						pero mirando hacia atrás, todo tiene sentido. Cuando era
+						adolescente, soñaba con hablar español porque la música
+						salsa me conmovía. Al regresar de mi voluntariado en
+						Perú y completar un curso de Gestión de Eventos de joven
+						adulto, me inspiré para trabajar en proyectos que
+						tuvieran como objetivo hacer un impacto global positivo.
+					</p>
+					<p>
+						Durante mi licenciatura en Artes Internacionales en
+						Australia, donde estudié Estudios de Español y
+						Latinoamericanos y Antropología, me impactó cómo están
+						entrelazados el idioma y la cultura, y nuestra
+						interpretación del mundo. Viajando por América Central y
+						del Sur como cineasta documental novato, presencié
+						iniciativas increíbles que se estaban creando a mi
+						alrededor. Anhelaba ver que estos proyectos alcanzaran a
+						una audiencia global.
+					</p>
+					<p>
+						Establecerme en Argentina abrió la puerta a mi carrera
+						como mentor de inglés y he estado trabajando durante más
+						de cinco años con creadores de habla hispana de todo el
+						mundo, utilizando mi experiencia, talento y curiosidad
+						para compartir lo que amo... ¡Inglés + Creatividad!
+					</p>
+				</div>
+				<div class="max-h-[500px]">
+					<Image
+						src={janelleTakingPhoto}
+						alt="janelle taking a photograph"
+						class="h-full object-contain"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section Three -->
+	<div class="bg-background py-[5rem]">
+		<div class="container max-w-[1100px]">
+			<h1
+				class="flex flex-col gap-2 font-Baloo text-darkOrange font-bold text-3xl mb-16 md:items-center"
+			>
+				<div>
+					<span
+						class="inline-block text-darkOrange pt-3 bg-white w-fit px-2"
+						>¿Qué significa</span
+					><span
+						class="inline-block bg-darkOrange pt-3 text-white w-fit px-2"
+						>la creatiidad</span
+					>
+				</div>
+
+				<span
+					class="inline-block text-darkOrange pt-3 bg-white w-fit px-2 md:text-end"
+					>para mí?</span
+				>
+			</h1>
+
+			<div class="flex flex-col sm:flex-row sm:items-center">
+				<div class="p-4 bg-lightOrange sm:w-[50%]">
+					<Image
+						src={janelleRowing}
+						alt="janelle sining in a band"
+						class="object-cover w-auto h-auto"
+					/>
+				</div>
+				<ul
+					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] mx-auto md:space-y-8"
+				>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
+						</div>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>Ser curiosa</span
+							>
+							<div class="flex flex-col">
+								<span> Preguntándote qué hay más allá. </span>
+								<span>¿Qué más puedo aprender?</span>
+							</div>
+						</div>
+					</li>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
+						</div>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>Explorando el mundo que te rodea</span
+							>
+							<div class="flex flex-col">
+								<span>
+									He visitado 33 países y vivido en 9.
+								</span>
+								<span
+									>de ellos y he crecido mucho en el camino.</span
+								>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="flex flex-col-reverse sm:flex-row sm:items-center">
+				<ul
+					class="space-y-4 my-12 sm:my-0 sm:w-[50%] md:max-w-[400px] mx-auto md:space-y-8"
+				>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
+						</div>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>Expresándote</span
+							>
+							<div class="flex flex-col">
+								<span>
+									En mi tiempo libre, me encontrarás en el
+									club
+								</span>
+								<span
+									>local de remo o cantando con mi banda.</span
+								>
+							</div>
+						</div>
+					</li>
+					<li class="flex items-start gap-2 text-start bg-white p-4">
+						<div class="size-6 mb-2">
+							<Image src={starGreen} alt="logo" />
+						</div>
+						<div class="flex flex-col justify-start">
+							<span
+								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
+								>El poder de transformar</span
+							>
+							<div class="flex flex-col">
+								<span>no solo hacer algo nuevo.</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div
+					class="p-4 bg-white flex items-center justify-center sm:w-[50%]"
+				>
+					<Image
+						src={janelleSinging}
+						alt="janelle rowing in the lake"
+						class="object-cover w-auto h-full"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>

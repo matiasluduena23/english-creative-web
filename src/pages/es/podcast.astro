@@ -1,0 +1,19 @@
+---
+import Layout from '@/layout/Layout.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+---
+
+<Layout title="English Creative | Podcast">
+	<div class="grid content-center min-h-screen">
+		<div class="container mx-auto text-center">
+			<h1 class="font-Baloo text-4xl font-bold mb-4">
+				¡Manténganse al tanto de nuestros próximos episodios!
+			</h1>
+			<a
+				href={getRelativeLocaleUrl('es', '/')}
+				class="block font-semibold bg-darkGreen text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"
+				>Volver</a
+			>
+		</div>
+	</div>
+</Layout>
