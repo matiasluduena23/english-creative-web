@@ -7,15 +7,19 @@ import { fade } from 'astro:transitions';
 	<div class="container px-2 md:px-[2rem]">
 		<h1
 			class="text-4xl text-foreground text-center md:text-[3.5rem] font-Baloo font-bold"
-			transition:animate={fade({ duration: '0.5s' })}
 		>
-			<span class="text-darkGreen">Impact</span> the world with your
-			<span class="text-darkGreen">ideas</span>
+			<span
+				class="text-darkGreen"
+				transition:animate={fade({ duration: '0.5s' })}>Impact</span
+			> the world with your
+			<span
+				class="text-darkGreen"
+				transition:animate={fade({ duration: '0.5s' })}>ideas</span
+			>
 		</h1>
 
-		<div class="my-12 max-w-[700px] min-h-400px mx-auto rounded-lg">
-			<Video client:idle />
-		</div>
+		<Video client:only />
+
 		<a
 			class="block font-semibold bg-darkOrange text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"
 			href="#services"

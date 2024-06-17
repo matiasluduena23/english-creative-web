@@ -19,7 +19,7 @@ export default function Header() {
 	return (
 		<header
 			className={clsx(
-				'bg-background py-6 sticky left-0  right-0 w-full z-20 ',
+				'bg-background py-6 sticky left-0  right-0 w-full z-50 ',
 				show ? 'top-0' : '',
 				shadow ? 'shadow-xl' : ''
 			)}
