@@ -1,4 +1,4 @@
-import { GlobeIcon } from 'lucide-react';
+import { ChevronDown, GlobeIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
 	Popover,
@@ -44,27 +44,22 @@ export default function NavLinks() {
 
 			<li>
 				<Popover>
-					<PopoverTrigger asChild className="mb-3">
+					<PopoverTrigger asChild className="">
 						<Button
 							variant="ghost"
-							className="group hover:bg-transparent flex items-center gap-1"
+							className="group hover:bg-transparent flex items-center gap-1 mb-2"
 						>
-							<p className="group-hover:opacity-70 mt-2 text-xl ">
-								Lang
+							<GlobeIcon />
+							<p className="group-hover:opacity-70  mt-2 text-xl ">
+								EN
 							</p>
-							<GlobeIcon className="group-hover:opacity-70" />
+							<ChevronDown className="group-hover:opacity-70" />
 						</Button>
 					</PopoverTrigger>
 					<PopoverContent className="w-30 flex flex-col gap-2 font-semibold">
 						<a
-							href={getRelativeLocaleUrl('en')}
-							className="text-foreground hover:opacity-70"
-						>
-							EN
-						</a>
-						<a
 							href={getRelativeLocaleUrl('es')}
-							className="text-foreground hover:opacity-70"
+							className="text-foreground hover:opacity-70 text-xl"
 						>
 							ES
 						</a>

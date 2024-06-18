@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png';
 import clsx from 'clsx';
 import { useShadowNavigation, useShowNavigation } from '@/lib/hooks';
 import Navigation from './Navigation';
-import { GlobeIcon } from 'lucide-react';
+import { ArrowDown, ChevronDown, GlobeIcon } from 'lucide-react';
 import {
 	Popover,
 	PopoverContent,
@@ -39,22 +39,17 @@ export default function Header() {
 								variant="ghost"
 								className="group hover:bg-transparent flex items-center gap-1"
 							>
-								<p className="group-hover:opacity-70 mb-1 text-xl ">
-									Lang
+								<GlobeIcon />
+								<p className="group-hover:opacity-70  text-xl ">
+									EN
 								</p>
-								<GlobeIcon className="group-hover:opacity-70" />
+								<ChevronDown className="group-hover:opacity-70" />
 							</Button>
 						</PopoverTrigger>
 						<PopoverContent className="w-30 flex flex-col gap-2 font-semibold">
 							<a
-								href={getRelativeLocaleUrl('en')}
-								className="text-foreground hover:opacity-70"
-							>
-								EN
-							</a>
-							<a
 								href={getRelativeLocaleUrl('es')}
-								className="text-foreground hover:opacity-70"
+								className="text-foreground hover:opacity-70 text-xl"
 							>
 								ES
 							</a>

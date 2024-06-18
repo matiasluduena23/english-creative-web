@@ -3,6 +3,11 @@ type CardInfo = {
 	text: string;
 	info: {
 		couching: string[];
-		translation: string[];
+		translation: string[] | (string | CardInfoObject)[];
 	};
+};
+
+type CardInfoObject = {
+	id: string;
+	data: string[];
 };
