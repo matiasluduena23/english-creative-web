@@ -19,6 +19,7 @@ export default function ToggleNavigation() {
 				<Button
 					variant="outline"
 					className="border border-darkGreen text-darkGreen hover:text-background hover:bg-darkGreen transition-colors"
+					aria-label="menu"
 				>
 					<MenuIcon />
 				</Button>

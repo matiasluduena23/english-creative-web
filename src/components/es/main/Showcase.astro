@@ -1,5 +1,4 @@
 ---
-import Video from '@/components/main/Video';
 import { fade } from 'astro:transitions';
 ---
 
@@ -13,13 +12,27 @@ import { fade } from 'astro:transitions';
 			<span class="text-darkGreen">ideas.</span>
 		</h1>
 
-		<div class="my-12 max-w-[700px] min-h-400px mx-auto rounded-lg">
-			<Video client:idle />
+		<div class="max-w-[740px] mx-auto my-8 relative">
+			<iframe
+				id="video"
+				class="aspect-video w-full z-0 h-full"
+				src="https://www.youtube.com/embed/lcU9OaWBWHs?si=vc3Pa9VJSlZehu5m?controls=0"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
 		</div>
+
 		<a
 			class="block font-semibold bg-darkOrange text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"
 			href="#services"
-			class="">Explorar opciones</a
+			class="">Explore your options</a
 		>
 	</div>
+	<a
+		class="block font-semibold bg-darkOrange text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"
+		href="#services"
+		class="">Explorar opciones</a
+	>
 </section>
