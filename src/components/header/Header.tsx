@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png';
 import clsx from 'clsx';
 import { useShadowNavigation, useShowNavigation } from '@/lib/hooks';
 import Navigation from './Navigation';
-import { ArrowDown, ChevronDown, GlobeIcon } from 'lucide-react';
+import { ChevronDown, GlobeIcon } from 'lucide-react';
 import {
 	Popover,
 	PopoverContent,

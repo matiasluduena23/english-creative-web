@@ -31,9 +31,10 @@ function Thumbnail({ handleClick }: { handleClick: () => void }) {
 		<div className="relative">
 			<img
 				src="/thumbnail.jpg"
-				loading="lazy"
+				loading="eager"
 				alt="Thumbnail"
 				className=" aspect-video"
+				fetchPriority="high"
 			/>
 			<button className="absolute left-1/2 top-1/2 -translate-y-1/3 -translate-x-1/2 bg-darkOrange p-2 rounded-full z-20 hover:scale-125 transition-transform">
 				<PlayIcon className="text-background " onClick={handleClick} />

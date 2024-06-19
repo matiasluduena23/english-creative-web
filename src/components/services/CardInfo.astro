@@ -8,7 +8,6 @@ import type { CardInfoSchema } from '@/lib/definitions';
 const { card } = Astro.props;
 type CardInfo = z.infer<typeof CardInfoSchema>;
 const { title, text } = card.data as CardInfo;
-console.log(card);
 ---
 
 <article

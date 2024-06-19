@@ -9,13 +9,6 @@ import {
 } from '@/components/ui/sheet';
 import { MenuIcon } from 'lucide-react';
 import { useState } from 'react';
-import { GlobeIcon } from 'lucide-react';
-import {
-	Popover,
-	PopoverContent,
-	PopoverTrigger,
-} from '@/components/ui/popover';
-import { getRelativeLocaleUrl } from 'astro:i18n';
 
 export default function ToggleNavigation() {
 	const [open, setOpen] = useState(false);

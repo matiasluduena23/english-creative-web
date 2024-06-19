@@ -7,8 +7,12 @@ import {
 	DialogTitle,
 	DialogTrigger,
 } from '@/components/ui/dialog';
+import type { CardInfoSchema } from '@/lib/definitions';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { CheckIcon } from 'lucide-react';
+import type { z } from 'zod';
+
+type CardInfo = z.infer<typeof CardInfoSchema>;
 
 export function InfoDialog({ card }: { card: CardInfo }) {
 	const { title, info } = card;
@@ -46,15 +50,31 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 							English Translation
 						</h3>
 						<ul>
-							{info.translation.map((item, index) => (
-								<li
-									key={index}
-									className="flex items-center gap-1"
-								>
-									<CheckIcon className="w-4 text-background" />
-									<p>{item}</p>
-								</li>
-							))}
+							{info.translation.map((item, index) =>
+								typeof item === 'string' ? (
+									<li
+										key={index}
+										className="flex items-center gap-1"
+									>
+										<CheckIcon className="w-4 text-background" />
+										<p>{item}</p>
+									</li>
+								) : (
+									<li key={index}>
+										<div className="flex items-center gap-1">
+											<CheckIcon className="w-4 text-background" />
+											<p>{item.id}</p>
+										</div>
+										<ol className="ml-8">
+											{item.data.map((option, index) => (
+												<li>
+													{index + 1}- {option}
+												</li>
+											))}
+										</ol>
+									</li>
+								)
+							)}
 						</ul>
 					</div>
 				</div>

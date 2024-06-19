@@ -7,8 +7,6 @@ import {
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { GlobeIcon } from 'lucide-react';
-
 import { MenuIcon } from 'lucide-react';
 import { useState } from 'react';
 
