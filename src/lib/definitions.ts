@@ -1,13 +1,19 @@
-type CardInfo = {
-	title: string;
-	text: string;
-	info: {
-		couching: string[];
-		translation: string[] | (string | CardInfoObject)[];
-	};
-};
+import { z } from 'zod';
 
-type CardInfoObject = {
-	id: string;
-	data: string[];
-};
+export const CardInfoSchema = z.object({
+	title: z.string(),
+	text: z.string(),
+	info: z.object({
+		couching: z.string().array(),
+		translation: z.union([
+			z.string().array(),
+			z.object({ id: z.string(), data: z.string().array() }).array(),
+		]),
+	}),
+});
+
+export const StepsSchema = z.object({
+	id: z.number(),
+	title: z.string(),
+	text: z.string(),
+});

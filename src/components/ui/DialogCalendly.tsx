@@ -17,7 +17,7 @@ export function DialogCalendly() {
 					Book your call
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-[800px] bg-background">
+			<DialogContent className="sm:max-w-[800px]">
 				<DialogHeader>
 					<DialogTitle className="text-center font-Baloo text-2xl text-foreground">
 						Calendly
@@ -25,7 +25,6 @@ export function DialogCalendly() {
 				</DialogHeader>
 
 				<InlineWidget url="https://calendly.com/englishcreativehub/introductory-call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=FFFFFF&primary_color=09564E" />
-				<DialogFooter></DialogFooter>
 			</DialogContent>
 		</Dialog>
 	);

@@ -9,6 +9,10 @@ import {
 } from '@/components/ui/dialog';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { CheckIcon } from 'lucide-react';
+import { CardInfoSchema } from '@/lib/definitions';
+import type { z } from 'zod';
+
+type CardInfo = z.infer<typeof CardInfoSchema>;
 
 export function InfoDialog({ card }: { card: CardInfo }) {
 	const { title, info } = card;
@@ -26,7 +30,7 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 				</DialogHeader>
 				<div className="grid gap-4 py-4">
 					<div className="">
-						<h3 className="font-semibold mb-2">English Couching</h3>
+						<h3 className="font-semibold mb-2">English Coaching</h3>
 						<ul>
 							{info.couching.map((item, index) => (
 								<li

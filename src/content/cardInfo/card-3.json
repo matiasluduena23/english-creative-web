@@ -1,0 +1,18 @@
+{
+	"title": "Grow",
+	"text": "Good for long-term needs and ongoing tasks",
+	"info": {
+		"couching": [
+			"Following up with investors, producers, sponsors.",
+			"Polishing your Business English."
+		],
+		"translation": [
+			"New or updated websites",
+			"New or updated",
+			{
+				"id": "Communication material:",
+				"data": ["Regular newsletters", "Regular social media content"]
+			}
+		]
+	}
+}

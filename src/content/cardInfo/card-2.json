@@ -1,0 +1,21 @@
+{
+	"title": "Build",
+	"text": "For mid-term needs and project-based tasks",
+	"info": {
+		"couching": [
+			"Developing pitches and presentations.",
+			"Preparing for strategic meetings."
+		],
+		"translation": [
+			"Entire websites",
+			"Social media profiles",
+			{
+				"id": "Communication material:",
+				"data": [
+					"Pre-existing newsletters",
+					"Pre-existing social media content"
+				]
+			}
+		]
+	}
+}

@@ -2,9 +2,13 @@
 import { Image } from 'astro:assets';
 import logoInfo from '@/assets/logoInfo.png';
 import { InfoDialog } from './InfoDialog';
+import type { z } from 'zod';
+import type { CardInfoSchema } from '@/lib/definitions';
 
 const { card } = Astro.props;
-const { title, text } = card as CardInfo;
+type CardInfo = z.infer<typeof CardInfoSchema>;
+const { title, text } = card.data as CardInfo;
+console.log(card);
 ---
 
 <article
@@ -15,5 +19,5 @@ const { title, text } = card as CardInfo;
 		<h2 class="font-OpenSans text-xl font-bold">{title}</h2>
 	</div>
 	<p class="max-w-[200px] my-6">{text}</p>
-	<InfoDialog client:load card={card} />
+	<InfoDialog client:load card={card.data} />
 </article>

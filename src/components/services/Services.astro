@@ -1,97 +1,11 @@
 ---
+import { getCollection } from 'astro:content';
 import { DialogCalendly } from '../ui/DialogCalendly';
 import CardInfo from './CardInfo.astro';
 import CardStep from './CardStep.astro';
 
-const dataCardInfo: CardInfo[] = [
-	{
-		title: 'Lead',
-		text: 'For short-term needs and one-off tasks',
-		info: {
-			couching: [
-				'Refining pitches and presentations.',
-				'Preparing for dream job interviews.',
-			],
-			translation: [
-				'Pitches and Pitch decks',
-				'Sales and product landing pages',
-				'Specific letters and emails',
-				'Video subtitles',
-				'Photograph captions',
-			],
-		},
-	},
-	{
-		title: 'Build',
-		text: 'For mid-term needs and project-based tasks',
-		info: {
-			couching: [
-				'Developing pitches and presentations.',
-				'Preparing for strategic meetings.',
-			],
-			translation: [
-				'Entire websites',
-				'Social media profiles',
-				{
-					id: 'Communication material:',
-					data: [
-						'Pre-existing newsletters',
-						'Pre-existing social media content',
-					],
-				},
-			],
-		},
-	},
-	{
-		title: 'Grow',
-		text: 'Good for long-term needs and ongoing tasks',
-		info: {
-			couching: [
-				'Following up with investors, producers, sponsors.',
-				'Polishing your Business English.',
-			],
-			translation: [
-				'New or updated websites',
-				'New or updated',
-				{
-					id: 'Communication material:',
-					data: [
-						'Regular newsletters',
-						'Regular social media content',
-					],
-				},
-			],
-		},
-	},
-];
-
-const dataCardSteps = [
-	{
-		id: 1,
-		title: 'Schedule a call',
-		text: 'You will schedule an introductory call to share details about your venture with us.',
-	},
-	{
-		id: 2,
-		title: 'Needs analysis',
-		text: 'We will conduct a needs analysis to tailor our services to your specific requirements.',
-	},
-	{
-		id: 3,
-		title: 'Proposal',
-		text: 'We will send you a personalised proposal outlining your needs, timeline, and project scope.',
-	},
-	{
-		id: 4,
-		title: 'Project timeline',
-		text: 'After accepting the proposal, we will work with you to organise a project timeline.',
-	},
-	{
-		id: 5,
-		title: 'Come to Life',
-		text: 'You will witness your project come to life in English and be able to confidently talk about it! ',
-	},
-];
+const allCardInfo = await getCollection('cardInfo');
+const allSteps = await getCollection('cardStep');
 ---
 
 <section id="services" class="">
@@ -106,10 +20,14 @@ const dataCardSteps = [
 			>
 				What we do
 			</h1>
+			<p class="text-xl opacity-80">
+				We equip you with the tools to gain visibility in the world’s
+				universal language
+			</p>
 			<div
 				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
 			>
-				{dataCardInfo.map((item) => <CardInfo card={item} />)}
+				{allCardInfo.map((item) => <CardInfo card={item} />)}
 			</div>
 		</div>
 	</div>
@@ -124,11 +42,11 @@ const dataCardSteps = [
 				class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
 			>
 				{
-					dataCardSteps.map((item) => (
+					allSteps.map((item) => (
 						<CardStep
-							id={item.id}
-							title={item.title}
-							text={item.text}
+							id={item.data.id}
+							title={item.data.title}
+							text={item.data.text}
 						/>
 					))
 				}
