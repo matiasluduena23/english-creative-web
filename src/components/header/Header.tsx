@@ -30,6 +30,8 @@ export default function Header() {
 						src={logo.src}
 						alt="english creative logo"
 						loading="eager"
+						width={220}
+						height={80}
 					/>
 				</a>
 				<div className="sm:hidden">

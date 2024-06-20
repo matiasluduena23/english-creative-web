@@ -21,22 +21,9 @@ import { PlayIcon } from 'lucide-react';
 		</h1>
 
 		<div class="max-w-[740px] mx-auto my-8 relative">
-			<!-- <button
-				class="absolute left-1/2 top-1/2 -translate-y-1/3 -translate-x-1/2 bg-darkOrange p-2 rounded-full z-30 hover:scale-125 transition-transform"
-				aria-label="play video"
-				id="btn-img"
-			>
-				<PlayIcon className="text-background " />
-			</button>
-			<Image
-				src={thumbnail}
-				alt="Janelle thumbnail"
-				id="thumbnail-img"
-				class="z-20"
-			/> -->
 			<iframe
 				id="video"
-				class="aspect-video w-full z-0 h-full"
+				class="aspect-video w-full z-0 h-full animate-in"
 				src="https://www.youtube.com/embed/lcU9OaWBWHs?si=vc3Pa9VJSlZehu5m?controls=0"
 				title="YouTube video player"
 				frameborder="0"
@@ -47,18 +34,7 @@ import { PlayIcon } from 'lucide-react';
 
 		<a
 			class="block font-semibold bg-darkOrange text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"
-			href="#services"
-			class="">Explore your options</a
+			href="#services">Get started</a
 		>
 	</div>
 </section>
-
-<script>
-	// const btn = document
-	// 	.querySelector('#btn-img')
-	// 	?.addEventListener('click', () => {
-	// 		document.querySelector('#thumbnail-img')!.style.display = 'none';
-	// 		btn.style.display = 'none';
-	// 		document.querySelector('#video')!.style.position = 'relative';
-	// 	});
-</script>

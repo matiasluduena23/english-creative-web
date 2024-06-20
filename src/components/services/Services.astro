@@ -27,35 +27,35 @@ const allSteps = await getCollection('cardStep');
 			<div
 				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
 			>
-				{allCardInfo.map((item) => <CardInfo card={item} />)}
+				{allCardInfo.map((item, index) => <CardInfo card={item} />)}
 			</div>
 		</div>
-	</div>
-	<div class="bg-background py-[7rem]">
-		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
-			<h1
-				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
-			>
-				How we do it
-			</h1>
-			<div
-				class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
-			>
-				{
-					allSteps.map((item) => (
-						<CardStep
-							id={item.data.id}
-							title={item.data.title}
-							text={item.data.text}
-						/>
-					))
-				}
-				<article class="bg-darkGreen p-6 text-background">
-					<h2 class="text-3xl text-balance font-bold mb-4">
-						Are you ready to get started?
-					</h2>
-					<DialogCalendly client:load />
-				</article>
+		<div class="bg-background py-[7rem]">
+			<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
+				<h1
+					class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
+				>
+					How we do it
+				</h1>
+				<div
+					class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
+				>
+					{
+						allSteps.map((item) => (
+							<CardStep
+								id={item.data.id}
+								title={item.data.title}
+								text={item.data.text}
+							/>
+						))
+					}
+					<article class="bg-darkGreen p-6 text-background">
+						<h2 class="text-3xl text-balance font-bold mb-4">
+							Are you ready to get started?
+						</h2>
+						<DialogCalendly client:load />
+					</article>
+				</div>
 			</div>
 		</div>
 	</div>

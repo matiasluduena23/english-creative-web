@@ -15,7 +15,7 @@ import type { z } from 'zod';
 type CardInfo = z.infer<typeof CardInfoSchema>;
 
 export function InfoDialog({ card }: { card: CardInfo }) {
-	const { title, info } = card;
+	const { title, info, time } = card;
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
@@ -27,8 +27,9 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 			<DialogContent className="sm:max-w-[425px] bg-darkGreen text-background">
 				<DialogHeader>
 					<DialogTitle className="text-2xl ">{title}</DialogTitle>
+					<p className="opacity-80">{time}</p>
 				</DialogHeader>
-				<div className="grid gap-4 py-4">
+				<div className="grid gap-4 ">
 					<div className="">
 						<h3 className="font-semibold mb-2">English Coaching</h3>
 						<ul>

@@ -69,15 +69,22 @@ export const theme = {
 			md: 'calc(var(--radius) - 2px)',
 			sm: 'calc(var(--radius) - 4px)',
 		},
+
 		keyframes: {
 			navbar: {
 				from: { top: '-100%' },
 				to: { top: '0' },
 			},
+			videFadeIn: {
+				from: { opacity: 0 },
+				to: { opacity: 1 },
+			},
 		},
 		animation: {
 			navbar: 'navbar 0.2s ease-in',
+			videFadeIn: 'videoFadeIn .5s ',
 		},
 	},
+	plugins: [require('tailwindcss-animated')],
 };
 export const plugins = [require('tailwindcss-animate')];

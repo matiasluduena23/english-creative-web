@@ -3,6 +3,7 @@ import { z } from 'zod';
 export const CardInfoSchema = z.object({
 	title: z.string(),
 	text: z.string(),
+	time: z.string(),
 	info: z.object({
 		couching: z.string().array(),
 		translation: z.union([
