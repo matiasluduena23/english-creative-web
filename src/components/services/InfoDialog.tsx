@@ -11,7 +11,7 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 import { CheckIcon } from 'lucide-react';
 import { CardInfoSchema } from '@/lib/definitions';
 import type { z } from 'zod';
-
+import bullet from '@/assets/BulletIcon.svg';
 type CardInfo = z.infer<typeof CardInfoSchema>;
 
 export function InfoDialog({ card }: { card: CardInfo }) {
@@ -68,8 +68,13 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 										</div>
 										<ol className="ml-8">
 											{item.data.map((option, index) => (
-												<li>
-													{index + 1}- {option}
+												<li className="flex items-center gap-1">
+													<img
+														src={bullet.src}
+														alt="icon"
+														className="w-2 mt-1"
+													/>{' '}
+													{option}
 												</li>
 											))}
 										</ol>
