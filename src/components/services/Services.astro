@@ -4,8 +4,13 @@ import { DialogCalendly } from '../ui/DialogCalendly';
 import CardInfo from './CardInfo.astro';
 import CardStep from './CardStep.astro';
 
-const allCardInfo = await getCollection('cardInfo');
-const allSteps = await getCollection('cardStep');
+const englishDocsCardsInfo = await getCollection('docs', ({ id }) => {
+	return id.startsWith('en/cardInfo/');
+});
+
+const englishDocsSteps = await getCollection('docs', ({ id }) => {
+	return id.startsWith('en/cardStep/');
+});
 ---
 
 <section id="services" class="">
@@ -27,7 +32,11 @@ const allSteps = await getCollection('cardStep');
 			<div
 				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
 			>
-				{allCardInfo.map((item, index) => <CardInfo card={item} />)}
+				{
+					englishDocsCardsInfo.map((item, index) => (
+						<CardInfo card={item} />
+					))
+				}
 			</div>
 		</div>
 		<div class="bg-background py-[7rem]">
@@ -41,7 +50,7 @@ const allSteps = await getCollection('cardStep');
 					class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
 				>
 					{
-						allSteps.map((item) => (
+						englishDocsSteps.map((item) => (
 							<CardStep
 								id={item.data.id}
 								title={item.data.title}

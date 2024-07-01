@@ -42,7 +42,7 @@ export default function Header() {
 								className="group hover:bg-transparent flex items-center gap-1"
 							>
 								<GlobeIcon />
-								<p className="group-hover:opacity-70  text-xl ">
+								<p className="group-hover:opacity-70 mb-1  text-xl ">
 									EN
 								</p>
 								<ChevronDown className="group-hover:opacity-70" />

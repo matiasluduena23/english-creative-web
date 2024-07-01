@@ -47,7 +47,7 @@ export default function NavLinks() {
 							className="group hover:bg-transparent flex items-center gap-1 mb-2"
 						>
 							<GlobeIcon />
-							<p className="group-hover:opacity-70  mt-2 text-xl ">
+							<p className="group-hover:opacity-70  mt-[10px] text-xl ">
 								ES
 							</p>
 							<ChevronDown className="group-hover:opacity-70" />

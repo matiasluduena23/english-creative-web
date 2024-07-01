@@ -1,11 +1,17 @@
 'use client';
 
-import { useMediaQuery } from '@/lib/hooks';
 import NavLinks from './NavLinks';
 import ToggleNavigation from './ToggleNavigation';
 
 export default function Navigation() {
-	const isDesktop = useMediaQuery('(min-width: 768px');
-
-	return isDesktop ? <NavLinks /> : <ToggleNavigation />;
+	return (
+		<>
+			<div className="block md:hidden">
+				<ToggleNavigation />
+			</div>
+			<div className="hidden md:block">
+				<NavLinks />
+			</div>
+		</>
+	);
 }

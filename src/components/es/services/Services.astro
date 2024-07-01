@@ -4,8 +4,13 @@ import CardInfo from './CardInfo.astro';
 import CardStep from './CardStep.astro';
 import { getCollection } from 'astro:content';
 
-const allCardInfo = await getCollection('cardInfo');
-const allSteps = await getCollection('cardStep');
+const englishDocsCardsInfo = await getCollection('docs', ({ id }) => {
+	return id.startsWith('es/cardInfo/');
+});
+
+const englishDocsSteps = await getCollection('docs', ({ id }) => {
+	return id.startsWith('es/cardStep/');
+});
 ---
 
 <section id="services" class="">
@@ -20,10 +25,14 @@ const allSteps = await getCollection('cardStep');
 			>
 				Que hacemos
 			</h1>
+			<p class="text-xl opacity-80">
+				Te proporcionamos las herramientas para ganar visibilidad en el
+				idioma universal del mundo.
+			</p>
 			<div
 				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
 			>
-				{allCardInfo.map((item) => <CardInfo card={item} />)}
+				{englishDocsCardsInfo.map((item) => <CardInfo card={item} />)}
 			</div>
 		</div>
 	</div>
@@ -38,7 +47,7 @@ const allSteps = await getCollection('cardStep');
 				class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
 			>
 				{
-					allSteps.map((item) => (
+					englishDocsSteps.map((item) => (
 						<CardStep
 							id={item.data.id}
 							title={item.data.title}

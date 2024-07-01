@@ -1,13 +1,20 @@
 ---
 import Layout from '@/layout/Layout.astro';
+import { Image } from 'astro:assets';
+import podcastLogo from '@/assets/podcastLogo.png';
 ---
 
 <Layout title="English Creative | Podcast">
-	<div class="grid content-center min-h-screen">
+	<div class="grid content-center min-h-screen bg-white">
 		<div class="container mx-auto text-center">
-			<h1 class="font-Baloo text-4xl font-bold mb-4">
+			<!-- <h1 class="font-Baloo text-4xl font-bold my-4">
 				Stay tuned for our upcoming episodes!
-			</h1>
+			</h1> -->
+			<Image
+				src={podcastLogo}
+				alt={'logo'}
+				class="max-w-[600px] mx-auto"
+			/>
 			<a
 				href="/"
 				class="block font-semibold bg-darkGreen text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"

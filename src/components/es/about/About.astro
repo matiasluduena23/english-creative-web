@@ -28,17 +28,25 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 					>Acerca de</span
 				>
 				<h1 class="font-Baloo text-2xl font-semibold md:text-4xl">
-					Todos somos creativos en el fondo
+					Todos somos creativos
 				</h1>
-				<p class="text-gray-500">
-					Sabemos que una de las partes más difíciles de expandir tu
-					negocio es confiar en alguien más para trabajar contigo. Por
-					eso estamos aquí, cuando y donde nos necesites, para todas
-					tus necesidades de inglés.
-				</p>
+				<div>
+					<p class="text-gray-500 mb-4 text-balance">
+						Sabemos que una de las partes más difíciles de expandir
+						tu negocio es confiar en alguien más para trabajar
+						contigo. Por eso estamos aquí, cuando y donde nos
+						necesites, para todas tus necesidades de inglés.
+					</p>
+					<p class="text-darkGreen font-bold max-w-[510px]">
+						Nuestra misión es llevar tus ideas al mundo de manera
+						auténtica, para que puedas impactar a personas en todo
+						el mundo en el idioma universal.
+					</p>
+				</div>
+
 				<a
 					href={getRelativeLocaleUrl('es', 'aboutme')}
-					class="flex items-center text-darkGreen mt-2 font-semibold"
+					class="flex items-center bg-darkGreen text-background w-fit py-2 pl-2 pr-1 rounded-sm mt-2 font-semibold hover:opacity-70"
 					><span>Acerca de mi</span>
 					<ChevronRightIcon className="w-5 pt-1 " />
 				</a>

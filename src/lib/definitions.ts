@@ -18,3 +18,8 @@ export const StepsSchema = z.object({
 	title: z.string(),
 	text: z.string(),
 });
+
+export const Docs = z.object({
+	cardInfo: CardInfoSchema,
+	steps: StepsSchema,
+});
