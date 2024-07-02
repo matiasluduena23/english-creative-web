@@ -4,6 +4,7 @@ import logo from '@/assets/logoWithText.png';
 import ContactForm from './ContactForm.astro';
 import TelegramIcon from '@/assets/TelegramIcon.astro';
 import LinkedInIcon from '@/assets/LinkedInIcon.astro';
+import InstagramIcon from '@/assets/InstagramIcon.astro';
 ---
 
 <footer id="contact" class="bg-darkGreen py-[7rem]">
@@ -32,20 +33,29 @@ import LinkedInIcon from '@/assets/LinkedInIcon.astro';
 					<li>
 						<a href="#" class="hover:opacity-80">Testimonials</a>
 					</li>
-					<li><a href="#" class="hover:opacity-80">Podcast</a></li>
+					<li>
+						<a href="/podcast" class="hover:opacity-80">Podcast</a>
+					</li>
 				</ul>
 				<div class="flex items-center gap-4 w-full">
 					<a
-						href=" https://t.me/englishcreativehub"
+						href=" https://t.me/english_creative_hub"
 						target="_blank"
-						class="font-semibold bg-darkGreen border border-background text-background py-1 px-4 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-						><TelegramIcon class="w-6" /> <span>Get in touch</span>
+						class="font-semibold bg-darkGreen border border-background text-background py-1 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+						><TelegramIcon class="w-4" /> <span>Get in touch</span>
 					</a>
 					<a
 						href="https://www.linkedin.com/in/janelle-e-french/"
 						target="_blank"
-						class="font-semibold bg-darkGreen border border-background text-background py-2 px-4 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-						><LinkedInIcon class="w-6" /> <span>Get connected</span>
+						class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+						><LinkedInIcon class="w-4" /> <span>Get connected</span>
+					</a>
+					<a
+						href="https://www.instagram.com/english_creative_hub/"
+						target="_blank"
+						class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+						><InstagramIcon class="w-4" />
+						<span>Get in touch</span>
 					</a>
 				</div>
 			</div>

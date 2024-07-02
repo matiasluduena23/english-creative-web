@@ -16,14 +16,15 @@ export function DialogCalendly() {
 					Book your call
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-[800px]">
+			<DialogContent className="sm:max-w-[800px] bg-white">
 				<DialogHeader>
 					<DialogTitle className="text-center font-Baloo text-2xl text-foreground">
 						Calendly
 					</DialogTitle>
 				</DialogHeader>
+				<InlineWidget url="https://calendly.com/englishcreativehub/introductory-call" />
 
-				<InlineWidget url="https://calendly.com/englishcreativehub/introductory-call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=FFFFFF&primary_color=09564E" />
+				{/* <InlineWidget url="https://calendly.com/englishcreativehub/introductory-call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=FFFFFF&primary_color=09564E" /> */}
 			</DialogContent>
 		</Dialog>
 	);

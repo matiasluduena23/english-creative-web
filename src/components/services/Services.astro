@@ -39,7 +39,7 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 				}
 			</div>
 		</div>
-		<div class="bg-background py-[7rem]">
+		<div class="bg-background py-[7rem]" id="howwork">
 			<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
 				<h1
 					class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
@@ -64,6 +64,16 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 						</h2>
 						<DialogCalendly client:load />
 					</article>
+				</div>
+				<div class="flex items-center justify-center mt-12 gap-2">
+					<p class="text-xl opacity-80">
+						Need a service that’s not listed here?
+					</p>
+					<a
+						href="#contact"
+						class="flex items-center bg-darkGreen text-background w-fit py-2 pl-2 pr-1 rounded-sm font-semibold hover:opacity-70"
+						>Get in touch!</a
+					>
 				</div>
 			</div>
 		</div>
