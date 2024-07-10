@@ -1,20 +1,5 @@
 ---
-import CardMain from './CardMain.astro';
 
-const data = [
-	{
-		id: 1,
-		text: 'a Spanish-speaking creator of a business or project',
-	},
-	{
-		id: 2,
-		text: 'ready to transform your venture into English',
-	},
-	{
-		id: 3,
-		text: 'eager to have an even greater positive impact in the world',
-	},
-];
 ---
 
 <section class="relative py-[7rem] bg-white">
@@ -26,6 +11,29 @@ const data = [
 	<div
 		class="grid sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-[800px] justify-center mx-auto gap-4"
 	>
-		{data.map((item) => <CardMain id={item.id} text={item.text} />)}
+		<article
+			class="border border-gray-600 rounded-xl p-8 text-center max-w-[254px] h-[242px] justify-self-center"
+		>
+			<h3 class="font-Baloo text-darkOrange text-3xl mb-4">01</h3>
+			<p class="uppercase font-thin text-[19px]">
+				a Spanish-speaking business owner or project creator
+			</p>
+		</article>
+		<article
+			class="border border-gray-600 rounded-xl p-8 text-center max-w-[254px] h-[242px] justify-self-center"
+		>
+			<h3 class="font-Baloo text-darkOrange text-3xl mb-4">02</h3>
+			<p class="uppercase font-thin text-[19px]">
+				ready to transform your venture into English
+			</p>
+		</article>
+		<article
+			class="border border-gray-600 rounded-xl p-8 text-center max-w-[254px] h-[242px] justify-self-center"
+		>
+			<h3 class="font-Baloo text-darkOrange text-3xl mb-4">03</h3>
+			<p class="uppercase font-thin text-[19px]">
+				eager to have an even greater positive impact in the world
+			</p>
+		</article>
 	</div>
 </section>

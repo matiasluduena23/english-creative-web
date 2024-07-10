@@ -24,7 +24,7 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 					<ArrowRight className="text-background" />
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-[425px] bg-darkGreen text-background">
+			<DialogContent className="max-w-[90%] sm:max-w-[425px] bg-darkGreen text-background">
 				<DialogHeader>
 					<DialogTitle className="text-2xl ">{title}</DialogTitle>
 					<p className="opacity-80">{time}</p>

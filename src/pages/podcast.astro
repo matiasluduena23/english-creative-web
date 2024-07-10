@@ -2,23 +2,42 @@
 import Layout from '@/layout/Layout.astro';
 import { Image } from 'astro:assets';
 import podcastLogo from '@/assets/podcastLogo.png';
+import logoRed from '@/assets/logoRed.png';
 ---
 
 <Layout title="English Creative | Podcast">
 	<div class="grid content-center min-h-screen bg-white">
 		<div class="container mx-auto text-center">
-			<!-- <h1 class="font-Baloo text-4xl font-bold my-4">
+			<h1 class="text-2xl font-semibold my-4">
+				When it happens to you, will you realise?
+			</h1>
+			<div class="max-w-[600px]">
+				<Image src={podcastLogo} alt={'logo'} class="block mx-auto" />
+			</div>
+
+			<div
+				class="flex flex-col sm:flex-row items-center mt-3 justify-center"
+			>
+				<p class="text-xl sm:mb-[17px]">A podcast by</p>
+				<Image
+					src={logoRed}
+					alt={'logo english creative'}
+					class="w-8 sm:mb-3"
+				/>
+				<p class="font-bold font-Baloo text-2xl">English Creative</p>
+			</div>
+
+			<p class="text-balance text-center text-xl opacity-80">
+				Fun stories from language learners who have felt 'the click' and
+				their thoughts on being creative in English
+			</p>
+			<p class="font-Baloo font-semibold text-xl my-6 opacity-90">
 				Stay tuned for our upcoming episodes!
-			</h1> -->
-			<Image
-				src={podcastLogo}
-				alt={'logo'}
-				class="max-w-[600px] mx-auto"
-			/>
+			</p>
 			<a
 				href="/"
-				class="block font-semibold bg-darkGreen text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70"
-				>Go back</a
+				class="block font-semibold bg-darkGreen text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70 mt-4"
+				>Home</a
 			>
 		</div>
 	</div>
