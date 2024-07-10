@@ -7,6 +7,7 @@ import janellePinkbg from '@/assets/janellePinkBg.jpeg';
 import janelleRowing from '@/assets/janelleRowing.jpg';
 import janelleSinging from '@/assets/janelleSinging.jpg';
 import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 ---
 
 <Layout title="About Us | English Creative">
@@ -24,9 +25,9 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 				class="font-Baloo text-darkOrange font-bold text-3xl sm:absolute sm:top-[7%] sm:right-[15%] md:left-1/2 md:top-[3rem] md:-translate-x-1/4 lg:top-[99px] lg:text-5xl lg:min-w-[450px]"
 			>
 				<h1 class="bg-white pt-3 mb-2 w-fit px-2">
-					Hola, soy Janelle,
+					¡Hola! soy Janelle,
 				</h1>
-				<h1 class="bg-white pt-3 w-fit px-2">tu English coach</h1>
+				<h1 class="bg-white pt-3 w-fit px-2">tu coach de Inglés</h1>
 			</div>
 
 			<div
@@ -44,9 +45,9 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 				class="text-center font-semibold font-Baloo text-xl sm:w-[50%] sm:pb-[2rem] md:pb-[4rem] lg:pb-[7rem] md:max-w-[550px] md:text-xl flex flex-col"
 			>
 				<p class="text-balance">
-					Inspirado por el lenguaje, impulsado por la creatividad: mi
-					misión es ayudar a preparar las voces de los creadores de
-					habla hispana para el escenario mundial.
+					Inspirada por el lenguaje, impulsada por la creatividad: mi
+					misión es ayudar a preparar las voces de habla hispana para
+					el escenario mundial.
 				</p>
 			</div>
 		</div>
@@ -64,28 +65,28 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 				<div class="flex flex-col gap-8">
 					<p>
 						Nunca imaginé convertirme en una apasionada Coach de
-						Inglés para creadores de habla hispana en todo el mundo,
+						Inglés para personas de habla hispana en todo el mundo,
 						pero mirando hacia atrás, todo tiene sentido. Cuando era
-						adolescente, soñaba con hablar español porque la música
-						salsa me conmovía. Al regresar de mi voluntariado en
-						Perú y completar un curso de Gestión de Eventos de joven
-						adulto, me inspiré para trabajar en proyectos que
-						tuvieran como objetivo hacer un impacto global positivo.
+						adolescente, soñaba con hablar español porque, al
+						escuchar salsa, me conmovía. Al regresar de mi
+						voluntariado en Perú y completar un curso de Gestión de
+						Eventos, me inspiré para trabajar en proyectos que
+						tuvieran un impacto global positivo.
 					</p>
 					<p>
-						Durante mi licenciatura en Artes Internacionales en
-						Australia, donde estudié Estudios de Español y
-						Latinoamericanos y Antropología, me impactó cómo están
+						Durante mi Licenciatura en Artes Internacionales en
+						Australia, donde me formé estudiando Español, cultura
+						Latinoamericana y Antropología. Me impactó cómo están
 						entrelazados el idioma y la cultura, y nuestra
-						interpretación del mundo. Viajando por América Central y
-						del Sur como cineasta documental novato, presencié
-						iniciativas increíbles que se estaban creando a mi
-						alrededor. Anhelaba ver que estos proyectos alcanzaran a
-						una audiencia global.
+						perspectiva del mundo. Viajando por América Central y
+						America del Sur, como cineasta documental novata,
+						presencié iniciativas increíbles que se estaban creando
+						a mi alrededor. Anhelaba ver que estos proyectos
+						alcanzaran a una audiencia global.
 					</p>
 					<p>
-						Establecerme en Argentina abrió la puerta a mi carrera
-						como mentor de inglés y he estado trabajando durante más
+						Establecerme en Argentina abrió las puertas a mi carrera
+						como mentora de inglés. He estado trabajando durante más
 						de cinco años con creadores de habla hispana de todo el
 						mundo, utilizando mi experiencia, talento y curiosidad
 						para compartir lo que amo... ¡Inglés + Creatividad!
@@ -114,7 +115,7 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 						>¿Qué significa</span
 					><span
 						class="inline-block bg-darkOrange pt-3 text-white w-fit px-2"
-						>la creatiidad</span
+						>la creatividad</span
 					>
 				</div>
 
@@ -163,10 +164,11 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 							>
 							<div class="flex flex-col">
 								<span>
-									He visitado 33 países y vivido en 9.
+									He visitado más de 33 países y he vivido en
+									9
 								</span>
 								<span
-									>de ellos y he crecido mucho en el camino.</span
+									>de ellos, he crecido mucho en el camino...</span
 								>
 							</div>
 						</div>
@@ -184,7 +186,7 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 						<div class="flex flex-col justify-start">
 							<span
 								class="font-bold uppercase font-Baloo text-darkGreen mt-1"
-								>Expresándote</span
+								>Expresándome</span
 							>
 							<div class="flex flex-col">
 								<span>
@@ -228,6 +230,11 @@ import janelleTakingPhoto from '@/assets/janelleTakingPhoto.jpg';
 					/>
 				</div>
 			</div>
+			<a
+				href={getRelativeLocaleUrl('es', '/#howwork')}
+				class="block font-semibold bg-darkOrange text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70 mt-12"
+				>Trabajemos juntos</a
+			>
 		</div>
 	</div>
 </Layout>

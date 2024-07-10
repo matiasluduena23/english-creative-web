@@ -1,31 +1,35 @@
----
-import CardMain from './CardMain.astro';
-
-const data = [
-	{
-		id: 1,
-		text: 'un creador de negocios o proyectos de habla hispana',
-	},
-	{
-		id: 2,
-		text: 'listo para transformar tu emprendimiento al inglés',
-	},
-	{
-		id: 3,
-		text: 'ansioso por tener un impacto positivo aún mayor en el mundo',
-	},
-];
----
-
 <section class="relative py-[7rem] bg-white">
 	<h2
 		class="text-2xl text-center font-OpenSans mb-6 md:text-4xl md:mb-12 max-w-[480px] mx-auto"
 	>
-		Estas en el lugar <span class="text-darkGreen">PERFECTO</span> si tu eres...
+		Estas en el lugar <span class="text-darkGreen">PERFECTO</span> si...
 	</h2>
 	<div
 		class="grid sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-[800px] justify-center mx-auto gap-4"
 	>
-		{data.map((item) => <CardMain id={item.id} text={item.text} />)}
+		<article
+			class="border border-gray-600 rounded-xl p-8 text-center max-w-[254px] h-[242px] justify-self-center"
+		>
+			<h3 class="font-Baloo text-darkOrange text-3xl mb-4">01</h3>
+			<p class="uppercase font-thin text-[19px]">
+				eres un creador de negocios o proyectos de habla hispana
+			</p>
+		</article>
+		<article
+			class="border border-gray-600 rounded-xl p-8 text-center max-w-[254px] h-[242px] justify-self-center"
+		>
+			<h3 class="font-Baloo text-darkOrange text-3xl mb-4">02</h3>
+			<p class="uppercase font-thin text-[19px]">
+				estás listo para transformar tu emprendimiento al inglés
+			</p>
+		</article>
+		<article
+			class="border border-gray-600 rounded-xl p-8 text-center max-w-[254px] h-[242px] justify-self-center"
+		>
+			<h3 class="font-Baloo text-darkOrange text-3xl mb-4">03</h3>
+			<p class="uppercase font-thin text-[19px]">
+				estás ansioso por tener un impacto positivo en el mundo
+			</p>
+		</article>
 	</div>
 </section>

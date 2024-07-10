@@ -1,5 +1,5 @@
 ---
-import { DialogCalendly } from '@/components/ui/DialogCalendly';
+import { DialogCalendlyEs } from '@/components/ui/DialogCalendlyEs';
 import CardInfo from './CardInfo.astro';
 import CardStep from './CardStep.astro';
 import { getCollection } from 'astro:content';
@@ -23,7 +23,7 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 			<h1
 				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl mt-2"
 			>
-				Que hacemos
+				¿Qué hacemos?
 			</h1>
 			<p class="text-xl opacity-80">
 				Te proporcionamos las herramientas para ganar visibilidad en el
@@ -36,12 +36,12 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 			</div>
 		</div>
 	</div>
-	<div class="bg-background py-[7rem]">
+	<div class="bg-background py-[7rem]" id="howwork">
 		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
 			<h1
 				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
 			>
-				Como lo hacemos
+				¿Cómo lo haremos?
 			</h1>
 			<div
 				class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
@@ -57,19 +57,20 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 				}
 				<article class="bg-darkGreen p-6 text-background">
 					<h2 class="text-3xl text-balance font-bold mb-4">
-						Estas listo para comenzar?
+						<span class="block">¿Estás listo </span>
+						<span class="block ml-1">para comenzar?</span>
 					</h2>
-					<DialogCalendly client:load />
+					<DialogCalendlyEs client:load />
 				</article>
 			</div>
 			<div class="flex items-center justify-center mt-12 gap-2">
 				<p class="text-xl opacity-80">
-					No encuentras lo que necesitas?
+					¿No encuentras lo que necesitas?
 				</p>
 				<a
 					href="#contact"
 					class="flex items-center bg-darkGreen text-background w-fit py-2 pl-2 pr-1 rounded-sm font-semibold hover:opacity-70"
-					>Contactanos!</a
+					>¡Contáctanos!</a
 				>
 			</div>
 		</div>

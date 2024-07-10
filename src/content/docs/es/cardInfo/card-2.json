@@ -1,19 +1,19 @@
 {
 	"title": "Construir",
-	"text": "Para necesidades a medio plazo y tareas basadas en proyectos",
+	"text": "Objetivos a mediano plazo y tareas basadas en proyectos",
 	"time": "Aprox. 30 houras",
 	"info": {
 		"couching": [
-			"Desarrollar propuestas y presentaciones",
+			"Desarrollar discursos y presentaciones",
 			"Preparación para reuniones estratégicas"
 		],
 		"translation": [
 			"Desarrollo de sitios web completos",
 			"Perfiles en redes sociales",
 			{
-				"id": "Material de comunicación",
+				"id": "Material de comunicación:",
 				"data": [
-					"Boletines ya existentes",
+					"Escritos  preexistentes",
 					"Contenido preexistente en redes sociales",
 					"etc."
 				]

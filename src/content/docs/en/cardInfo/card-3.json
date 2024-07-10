@@ -9,13 +9,12 @@
 		],
 		"translation": [
 			"New or updated websites",
-			"New or updated",
 			{
 				"id": "Communication material:",
 				"data": [
 					"Regular newsletters",
 					"Regular social media content",
-					"etc."
+					"Etc."
 				]
 			}
 		]

@@ -11,11 +11,12 @@ import type { CardInfoSchema } from '@/lib/definitions';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { CheckIcon } from 'lucide-react';
 import type { z } from 'zod';
+import bullet from '@/assets/BulletIcon.svg';
 
 type CardInfo = z.infer<typeof CardInfoSchema>;
 
 export function InfoDialog({ card }: { card: CardInfo }) {
-	const { title, info } = card;
+	const { title, info, time } = card;
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
@@ -27,10 +28,11 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 			<DialogContent className="sm:max-w-[425px] bg-darkGreen text-background">
 				<DialogHeader>
 					<DialogTitle className="text-2xl ">{title}</DialogTitle>
+					<p className="opacity-80">{time}</p>
 				</DialogHeader>
-				<div className="grid gap-4 py-4">
+				<div className="grid gap-4 ">
 					<div className="">
-						<h3 className="font-semibold mb-2">English Couching</h3>
+						<h3 className="font-semibold mb-2">English Coaching</h3>
 						<ul>
 							{info.couching.map((item, index) => (
 								<li
@@ -67,8 +69,13 @@ export function InfoDialog({ card }: { card: CardInfo }) {
 										</div>
 										<ol className="ml-8">
 											{item.data.map((option, index) => (
-												<li>
-													{index + 1}- {option}
+												<li className="flex items-center gap-1">
+													<img
+														src={bullet.src}
+														alt="icon"
+														className="w-2 mt-1"
+													/>{' '}
+													{option}
 												</li>
 											))}
 										</ol>

@@ -1,21 +1,20 @@
 {
-	"title": "Expandir",
-	"text": "Adecuado para necesidades a largo plazo y tareas continuas",
+	"title": "Crecer",
+	"text": "Adaptádonos a tareas a largo plazo y necesidades continuas.",
 	"time": "30+ houras",
 	"info": {
 		"couching": [
-			"Haciendo seguimiento con inversores, productores, patrocinadores",
+			"Seguimiento con inversores, productores, etc.",
 			"Pulir tu inglés empresarial"
 		],
 		"translation": [
-			"Websites nuevos o actualizados",
-			"Nuevos o actualizados",
+			"Sitios web nuevos o actualizados",
 			{
 				"id": "Material de comunicación",
 				"data": [
 					"Boletines periódicos",
 					"Contenido regular en redes sociales",
-					"etc."
+					"Etc."
 				]
 			}
 		]
