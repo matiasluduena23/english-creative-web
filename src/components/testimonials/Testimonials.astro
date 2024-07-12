@@ -1,0 +1,129 @@
+---
+import { Image } from 'astro:assets';
+import testimonialpicture from '@/assets/testimonialpicture.jpg';
+---
+
+<section id="testimonials" class="py-[7rem] bg-background">
+	<div class="container max-w-[600px] mx-auto">
+		<h1 class="text-5xl font-semibold font-Baloo mb-12">Our Stories</h1>
+
+		<div class="space-y-12">
+			<article class="space-y-4">
+				<h2
+					class="text-darkGreen text-2xl font-bold font-Baloo capitalize"
+				>
+					Feeling powerful and authentic
+				</h2>
+				<p>
+					Nati was the <span
+						class="relative after:absolute after:-bottom-[5px] after:h-[8px] after:w-full after:border-t-[3px] after:border-t-darkOrange after:left-0 after:rounded-[50%]"
+					>
+						winner</span
+					> of a grant from the National Geographic Society for her project
+					<strong class="text-darkOrange">Las Fuegas</strong>
+					. She needed to participate in group discussions and meetings
+					in English with her peers and Program Officer. With English coaching,
+					<span class="bg-softOrange"
+						>she improved her ability to effectively communicate</span
+					> in online meetings and confidently share project updates in
+					1:1 sessions.
+				</p>
+				<p>
+					She also applied for another grant, requiring an updated
+					English CV and carefully worded English captions for her
+					photography portfolio. Through a collaborative approach to
+					translation, she ensured her work was authentically
+					presented.
+				</p>
+				<div class="flex items-center gap-4 pt-4">
+					<Image
+						src={testimonialpicture}
+						alt={'jen'}
+						class="w-16 h-16 object-cover rounded-full"
+					/>
+					<div class="flex flex-col">
+						<p class="font-bold">Nati</p>
+						<p class="opacity-70 font-semibold">
+							Photographer-Activist
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="space-y-4 border-t-[1px] border-gray-300 pt-16">
+				<h2
+					class="text-darkGreen text-2xl font-bold font-Baloo capitalize"
+				>
+					Finding my voice in English
+				</h2>
+				<p>
+					Alba sought to <span class="bg-softOrange">
+						build stronger business relationships in English</span
+					> while participating in meetings with native and non-native
+					speakers in the USA and Europe. Through English coaching, she
+					refined her vocabulary and pronunciation, bridging the gap between
+					her<strong class="text-darkOrange">
+						‘Spanish-self’ and ‘English-self’</strong
+					>.
+				</p>
+				<p>
+					She also applied for another grant, requiring an updated
+					English CV and carefully worded English captions for her
+					photography portfolio. Through a collaborative approach to
+					translation, she ensured her work was authentically
+					presented.
+				</p>
+				<div class="flex items-center gap-4 pt-4">
+					<Image
+						src={testimonialpicture}
+						alt={'jen'}
+						class="w-16 h-16 object-cover rounded-full"
+					/>
+					<div class="flex flex-col">
+						<p class="font-bold">Alba</p>
+						<p class="opacity-70 font-semibold">
+							Founder of Comunicación de la Buena
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="space-y-4 border-t-[1px] border-gray-300 pt-16">
+				<h2
+					class="text-darkGreen text-2xl font-bold font-Baloo capitalize"
+				>
+					Thriving in formal and informal environments
+				</h2>
+				<p>
+					Marcos had used English in the <span
+						class="relative after:absolute after:-bottom-[5px] after:h-[8px] after:w-full after:border-t-[3px] after:border-t-darkOrange after:left-0 after:rounded-[50%]"
+						>business</span
+					>
+					world for years but felt it didn't quite match the fluency of
+					his colleagues and international peers For him, trade shows were
+					often daunting. Determined to improve, Marcos invested time on
+					developing his English skills with a <span
+						class="bg-softOrange">clear goal in mind</span
+					>: confidently pitch his brand to international clients in
+					both written and spoken forms, engage in natural
+					conversations in informal settings, and conduct board
+					meetings without hesitating on which vocabulary to use … in
+					other words, adapt to any situation his business context
+					required.
+				</p>
+
+				<div class="flex items-center gap-4 pt-4">
+					<Image
+						src={testimonialpicture}
+						alt={'jen'}
+						class="w-16 h-16 object-cover rounded-full"
+					/>
+					<div class="flex flex-col">
+						<p class="font-bold">Marcos</p>
+						<p class="opacity-70 font-semibold">
+							Founder of Boons - Learning from Nature
+						</p>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>

@@ -21,7 +21,7 @@ export default function NavLinks() {
 				</a>
 			</li>
 			<li>
-				<a className="hover:opacity-70" href="">
+				<a className="hover:opacity-70" href="#testimonials">
 					Testimonials
 				</a>
 			</li>
