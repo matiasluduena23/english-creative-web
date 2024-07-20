@@ -1,22 +1,22 @@
 {
-	"title": "Crecer",
-	"text": "Adaptádonos a tareas a largo plazo y necesidades continuas.",
-	"time": "30+ houras",
-	"info": {
-		"couching": [
-			"Seguimiento con inversores, productores, etc.",
-			"Pulir tu inglés empresarial"
-		],
-		"translation": [
-			"Sitios web nuevos o actualizados",
-			{
-				"id": "Material de comunicación",
-				"data": [
-					"Boletines periódicos",
-					"Contenido regular en redes sociales",
-					"Etc."
-				]
-			}
-		]
-	}
+  "title": "Crecer",
+  "text": "Para necesidades a largo plazo y tareas continuas.",
+  "time": "30+ houras",
+  "info": {
+    "couching": [
+      "Seguimiento con inversores, productores, etc.",
+      "Pulir tu inglés empresarial"
+    ],
+    "translation": [
+      "Sitios web nuevos o actualizados",
+      {
+        "id": "Material de comunicación",
+        "data": [
+          "Boletines periódicos",
+          "Contenido regular en redes sociales",
+          "Etc."
+        ]
+      }
+    ]
+  }
 }

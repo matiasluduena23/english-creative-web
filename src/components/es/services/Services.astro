@@ -41,7 +41,7 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 			<h1
 				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
 			>
-				¿Cómo lo haremos?
+				¿Cómo lo hacemos?
 			</h1>
 			<div
 				class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
@@ -49,6 +49,7 @@ const englishDocsSteps = await getCollection('docs', ({ id }) => {
 				{
 					englishDocsSteps.map((item) => (
 						<CardStep
+						
 							id={item.data.id}
 							title={item.data.title}
 							text={item.data.text}

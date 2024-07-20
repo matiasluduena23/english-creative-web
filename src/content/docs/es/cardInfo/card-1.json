@@ -1,19 +1,19 @@
 {
-	"title": "Orientar",
-	"text": "El aprendizaje a tareas a corto plazo y objetivos específicos.",
-	"time": "Aprox. 10 horas",
-	"info": {
-		"couching": [
-			"Perfeccionar presentaciones y propuestas",
-			"Preparándonos para entrevistas de trabajo soñadas"
-		],
-		"translation": [
-			"Preparación de presentaciones y discursos",
-			"Páginas de servicios y ventas de productos",
-			"Cartas y correos electrónicos",
-			"Subtítulos de videos",
-			"Subtítulos de fotografías",
-			"etc."
-		]
-	}
+  "title": "Orientar",
+  "text": "Para necesidades a corto plazo y tareas puntuales.",
+  "time": "Aprox. 10 horas",
+  "info": {
+    "couching": [
+      "Perfeccionar presentaciones y propuestas",
+      "Preparándonos para entrevistas de trabajo soñadas"
+    ],
+    "translation": [
+      "Preparación de presentaciones y discursos",
+      "Páginas de servicios y ventas de productos",
+      "Cartas y correos electrónicos",
+      "Subtítulos de videos",
+      "Subtítulos de fotografías",
+      "etc."
+    ]
+  }
 }

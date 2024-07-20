@@ -8,58 +8,55 @@ import InstagramIcon from '@/assets/InstagramIcon.astro';
 ---
 
 <footer id="contact" class="bg-darkGreen py-[7rem]">
-	<div class="container max-w-[1200px] mx-auto">
-		<div class="flex flex-col sm:flex-row-reverse gap-16 mb-16">
-			<ContactForm />
-			<div
-				class="flex flex-col justify-between items-start gap-4 sm:w-[50%]"
-			>
-				<Image src={logo} alt="logo" width={120} class="mb-4" />
-				<div class="text-background font-Baloo text-2xl">
-					<h2 class="font-OpenSans mb-2">
-						The power to transform is in your hands
-					</h2>
-					<h3 class="font-bold">and you know it!</h3>
-				</div>
+  <div class="container max-w-[1200px] mx-auto">
+    <div class="flex flex-col sm:flex-row-reverse gap-16 mb-16">
+      <ContactForm />
+      <div class="flex flex-col justify-between items-start gap-4 sm:w-[50%]">
+        <Image src={logo} alt="logo" width={120} class="mb-4" />
+        <div class="text-background font-Baloo text-2xl">
+          <h2 class="font-OpenSans mb-2">
+            The power to transform is in your hands
+          </h2>
+          <h3 class="font-bold">and you know it!</h3>
+        </div>
 
-				<ul
-					class="flex flex-row justify-between items-start gap-2 text-background font-semibold font-Baloo md:gap-8"
-				>
-					<li>
-						<a href="#services" class="hover:opacity-80">Services</a
-						>
-					</li>
-					<li><a href="#about" class="hover:opacity-80">About</a></li>
-					<li>
-						<a href="#" class="hover:opacity-80">Testimonials</a>
-					</li>
-					<li>
-						<a href="/podcast" class="hover:opacity-80">Podcast</a>
-					</li>
-				</ul>
-				<div class="flex flex-wrap items-center gap-4 w-full">
-					<a
-						href=" https://t.me/english_creative_hub"
-						target="_blank"
-						class="font-semibold bg-darkGreen border border-background text-background py-1 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-						><TelegramIcon class="w-4" /> <span>Get in touch</span>
-					</a>
-					<a
-						href="https://www.linkedin.com/in/janelle-e-french/"
-						target="_blank"
-						class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-						><LinkedInIcon class="w-4" /> <span>Get connected</span>
-					</a>
-					<a
-						href="https://www.instagram.com/english_creative_hub/"
-						target="_blank"
-						class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-						><InstagramIcon class="w-4" />
-						<span>Get Creative</span>
-					</a>
-				</div>
-			</div>
-			<hr class="mx-auto opacity-45" />
-		</div>
-	</div>
+        <ul
+          class="flex flex-row justify-between items-start gap-2 text-background font-semibold font-Baloo md:gap-8"
+        >
+          <li>
+            <a href="#services" class="hover:opacity-80">Services</a>
+          </li>
+          <li><a href="#about" class="hover:opacity-80">About</a></li>
+          <li>
+            <a href="#testimonials" class="hover:opacity-80">Testimonials</a>
+          </li>
+          <li>
+            <a href="/podcast" class="hover:opacity-80">Podcast</a>
+          </li>
+        </ul>
+        <div class="flex flex-wrap items-center gap-4 w-full">
+          <a
+            href=" https://t.me/english_creative_hub"
+            target="_blank"
+            class="font-semibold bg-darkGreen border border-background text-background py-1 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+            ><TelegramIcon class="w-4" /> <span>Get in touch</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/janelle-e-french/"
+            target="_blank"
+            class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+            ><LinkedInIcon class="w-4" /> <span>Get connected</span>
+          </a>
+          <a
+            href="https://www.instagram.com/english_creative_hub/"
+            target="_blank"
+            class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+            ><InstagramIcon class="w-4" />
+            <span>Get Creative</span>
+          </a>
+        </div>
+      </div>
+      <hr class="mx-auto opacity-45" />
+    </div>
+  </div>
 </footer>

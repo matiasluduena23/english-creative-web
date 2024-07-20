@@ -1,22 +1,18 @@
 {
-	"title": "Grow",
-	"text": "Good for long-term needs and ongoing tasks",
-	"time": "30+ hours",
-	"info": {
-		"couching": [
-			"Following up with investors, producers, sponsors",
-			"Polishing your Business English"
-		],
-		"translation": [
-			"New or updated websites",
-			{
-				"id": "Communication material:",
-				"data": [
-					"Regular newsletters",
-					"Regular social media content",
-					"Etc."
-				]
-			}
-		]
-	}
+  "title": "Grow",
+  "text": "For long-term needs and ongoing tasks",
+  "time": "30+ hours",
+  "info": {
+    "couching": [
+      "Following up with investors, producers, sponsors",
+      "Polishing your Business English"
+    ],
+    "translation": [
+      "New or updated websites",
+      {
+        "id": "Communication material:",
+        "data": ["Regular newsletters", "Regular social media content", "Etc."]
+      }
+    ]
+  }
 }

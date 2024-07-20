@@ -1,23 +1,23 @@
 {
-	"title": "Construir",
-	"text": "Objetivos a mediano plazo y tareas basadas en proyectos",
-	"time": "Aprox. 30 houras",
-	"info": {
-		"couching": [
-			"Desarrollar discursos y presentaciones",
-			"Preparación para reuniones estratégicas"
-		],
-		"translation": [
-			"Desarrollo de sitios web completos",
-			"Perfiles en redes sociales",
-			{
-				"id": "Material de comunicación:",
-				"data": [
-					"Escritos  preexistentes",
-					"Contenido preexistente en redes sociales",
-					"etc."
-				]
-			}
-		]
-	}
+  "title": "Construir",
+  "text": "Para necesidades a medio plazo y tareas basadas en proyectos.",
+  "time": "Aprox. 30 houras",
+  "info": {
+    "couching": [
+      "Desarrollar discursos y presentaciones",
+      "Preparación para reuniones estratégicas"
+    ],
+    "translation": [
+      "Desarrollo de sitios web completos",
+      "Perfiles en redes sociales",
+      {
+        "id": "Material de comunicación:",
+        "data": [
+          "Escritos  preexistentes",
+          "Contenido preexistente en redes sociales",
+          "etc."
+        ]
+      }
+    ]
+  }
 }
