@@ -5,81 +5,75 @@ import CardInfo from './CardInfo.astro';
 import CardStep from './CardStep.astro';
 
 const englishDocsCardsInfo = await getCollection('docs', ({ id }) => {
-	return id.startsWith('en/cardInfo/');
+  return id.startsWith('en/cardInfo/');
 });
 
 const englishDocsSteps = await getCollection('docs', ({ id }) => {
-	return id.startsWith('en/cardStep/');
+  return id.startsWith('en/cardStep/');
 });
 ---
 
 <section id="services" class="">
-	<div class="bg-background py-[7rem]">
-		<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
-			<span
-				class="uppercase bg-background border border-darkGreen text-darkGreen text-[10px] w-fit px-2 rounded-lg tracking-widest pb-[1px] mb-4 block"
-				>Services</span
-			>
-			<h1
-				class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl mt-2"
-			>
-				What we do
-			</h1>
-			<p class="text-xl opacity-80">
-				We equip you with the tools to gain visibility in the world’s
-				universal language.
-			</p>
-			<div
-				class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
-			>
-				{
-					englishDocsCardsInfo.map((item, index) => (
-						<CardInfo card={item} />
-					))
-				}
-			</div>
-		</div>
-		<div class="bg-background py-[7rem]" id="howwork">
-			<div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
-				<h1
-					class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
-				>
-					How we do it
-				</h1>
-				<div
-					class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
-				>
-					{
-						englishDocsSteps.map((item) => (
-							<CardStep
-								id={item.data.id}
-								title={item.data.title}
-								text={item.data.text}
-							/>
-						))
-					}
-					<article class="bg-darkGreen p-6 text-background">
-						<h2 class="text-3xl text-balance font-bold mb-4">
-							Are you ready to get started?
-						</h2>
-						<DialogCalendly client:load />
-					</article>
-				</div>
-				<div
-					class="flex flex-col sm:flex-row items-center justify-center mt-12 gap-2"
-				>
-					<p
-						class="text-center sm:text-start text-balance text-xl opacity-80"
-					>
-						Need a service that’s not listed here?
-					</p>
-					<a
-						href="#contact"
-						class="flex items-center bg-darkGreen text-background w-fit py-2 pl-2 pr-1 rounded-sm font-semibold hover:opacity-70"
-						>Get in touch!</a
-					>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="bg-background py-[7rem]">
+    <div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
+      <span
+        class="uppercase bg-background border border-darkGreen text-darkGreen text-[10px] w-fit px-2 rounded-lg tracking-widest pb-[1px] mb-4 block"
+        >Services</span
+      >
+      <h1
+        class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl mt-2"
+      >
+        What we do
+      </h1>
+      <p class="text-xl opacity-80">
+        We equip you with the tools to gain visibility in the world’s universal
+        language.
+      </p>
+      <div
+        class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center mt-8"
+      >
+        {englishDocsCardsInfo.map((item) => <CardInfo card={item} />)}
+      </div>
+    </div>
+    <div class="bg-background py-[7rem]" id="howwork">
+      <div class="container max-w-[350px] sm:max-w-[1200px] mx-auto">
+        <h1
+          class="text-start text-4xl font-Baloo font-semibold text-gray-700 md:text-5xl"
+        >
+          How we do it
+        </h1>
+        <div
+          class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-center mt-6"
+        >
+          {
+            englishDocsSteps.map((item) => (
+              <CardStep
+                id={item.data.id}
+                title={item.data.title}
+                text={item.data.text}
+              />
+            ))
+          }
+          <article class="bg-darkGreen p-6 text-background">
+            <h2 class="text-3xl text-balance font-bold mb-4">
+              Are you ready to get started?
+            </h2>
+            <DialogCalendly client:load />
+          </article>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center mt-12 gap-2"
+        >
+          <p class="text-center sm:text-start text-balance text-xl opacity-80">
+            Need a service that’s not listed here?
+          </p>
+          <a
+            href="#contact"
+            class="flex items-center bg-darkGreen text-background w-fit py-2 pl-2 pr-1 rounded-sm font-semibold hover:opacity-70"
+            >Get in touch!</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
