@@ -26,7 +26,7 @@ export default function ToggleNavigation() {
 			</SheetTrigger>
 			<SheetContent className="bg-darkGreen border-none">
 				<SheetClose>
-					<ul className=" pt-14 flex flex-col justify-between gap-9 items-center font-Baloo text-xl font-semibold text-background">
+					<ul className="pt-14 flex flex-col justify-between gap-9 items-center font-Baloo text-xl font-semibold text-background">
 						<li>
 							<a className="hover:opacity-70" href="#services">
 								Services

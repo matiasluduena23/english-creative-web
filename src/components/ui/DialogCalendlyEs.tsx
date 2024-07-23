@@ -16,7 +16,7 @@ export function DialogCalendlyEs() {
           Reserva tu llamada
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-[95%] sm:max-w-[800px] bg-white">
+      <DialogContent className="max-w-[95%] sm:max-w-[800px] mt-20 bg-white">
         <DialogHeader>
           <DialogTitle className="text-center font-Baloo text-2xl text-foreground">
             Calendly
