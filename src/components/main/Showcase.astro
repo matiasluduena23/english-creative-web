@@ -31,26 +31,29 @@
     >
   </div>
 </section>
+<style></style>
 <script>
-  import { animate, stagger } from 'motion';
+  // import { animate, stagger } from 'motion';
 
-  import SplitType from 'split-type';
-  const headImpact = new SplitType('#impact', { types: 'words' });
-  const headWorld = new SplitType('#world', { types: 'words' });
-  const headIdea = new SplitType('#ideas', { types: 'words' });
-  const video = document.querySelector('#video');
-  const btnShowcase = document.querySelector('#btn-showcase');
-  const title = [
-    ...headImpact.words!,
-    ...headWorld.words!,
-    ...headIdea.words!,
-    video!,
-    btnShowcase!,
-  ];
+  // import SplitType from 'split-type';
+  // document.addEventListener('astro:after-preparation', () => {
+  //   const headImpact = new SplitType('#impact', { types: 'words' });
+  //   const headWorld = new SplitType('#world', { types: 'words' });
+  //   const headIdea = new SplitType('#ideas', { types: 'words' });
+  //   const video = document.querySelector('#video');
+  //   const btnShowcase = document.querySelector('#btn-showcase');
+  //   const title = [
+  //     ...headImpact.words,
+  //     ...headWorld.words,
+  //     ...headIdea.words,
+  //     video,
+  //     btnShowcase,
+  //   ];
 
-  animate(
-    title,
-    { y: [24, 0], opacity: [0, 1] },
-    { duration: 1, delay: stagger(0.1) }
-  );
+  //   animate(
+  //     title,
+  //     { y: [24, 0], opacity: [0, 1] },
+  //     { duration: 1, delay: stagger(0.1) }
+  //   );
+  // });
 </script>

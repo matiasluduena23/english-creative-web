@@ -35,7 +35,6 @@ import Testimonials from '@/components/testimonials/Testimonials.astro';
     />
 
     <title>Transform Your Business into English | English Creative</title>
-    <ViewTransitions />
   </head>
   <body class="bg-background text-foreground">
     <Header client:idle />
@@ -44,28 +43,5 @@ import Testimonials from '@/components/testimonials/Testimonials.astro';
     <About />
     <Testimonials />
     <Footer />
-    <script>
-      import { animate, stagger } from 'motion';
-
-      import SplitType from 'split-type';
-      const headImpact = new SplitType('#impact', { types: 'words' });
-      const headWorld = new SplitType('#world', { types: 'words' });
-      const headIdea = new SplitType('#ideas', { types: 'words' });
-      const video = document.querySelector('#video');
-      const btnShowcase = document.querySelector('#btn-showcase');
-      const title = [
-        ...headImpact.words!,
-        ...headWorld.words!,
-        ...headIdea.words!,
-        video!,
-        btnShowcase!,
-      ];
-
-      animate(
-        title,
-        { y: [24, 0], opacity: [0, 1] },
-        { duration: 1, delay: stagger(0.1) }
-      );
-    </script>
   </body>
 </html>

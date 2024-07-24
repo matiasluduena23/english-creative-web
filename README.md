@@ -1,47 +1,25 @@
-# Astro Starter Kit: Minimal
+# English Creative
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Developer Stack
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+This project was made with:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro**
+- **Tailwind CSS**
+- **React**
+- **ShadCN**
+- **TypeScript**
 
-## 🚀 Project Structure
+[Visit our website](https://www.english-creative.com)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Founder
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Janelle French
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## About the Project
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+English Creative transforms Spanish-speaking businesses and projects into English, equipping them with the tools to gain global visibility. Our mission is to enable business owners and project creators to expand their reach and have an even greater positive impact on the world.
 
-Any static assets, like images, can be placed in the `public/` directory.
+We offer three tailored plans—Lead, Build, and Grow—designed to meet various needs from short-term tasks to long-term, ongoing support. Our services include English coaching, translation of pitches, websites, social media profiles, and other communication materials.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Our process ensures personalized attention through an initial videocall, a detailed needs analysis, and a customized proposal. With English Creative, your venture will come to life in English, allowing you to confidently share your vision and ideas with a global audience.
