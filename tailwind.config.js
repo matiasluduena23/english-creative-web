@@ -71,26 +71,10 @@ export const theme = {
       md: 'calc(var(--radius) - 2px)',
       sm: 'calc(var(--radius) - 4px)',
     },
-
-    keyframes: {
-      navbar: {
-        from: { top: '-100%' },
-        to: { top: '0' },
-      },
-      videFadeIn: {
-        from: { opacity: 0 },
-        to: { opacity: 1 },
-      },
-      title: {
-        '0%': { transform: 'translateX(24px)' },
-        '100%': { transform: 'translateX(0px)' },
-      },
-    },
-    animation: {
-      navbar: 'navbar 0.2s ease-in',
-      videFadeIn: 'videoFadeIn .05s ',
-      title: 'title 0.2s ease-in',
-    },
   },
 };
-export const plugins = [require('tailwindcss-animate')];
+export const plugins = [
+  require('tailwindcss-animate'),
+  require('tailwindcss-animated'),
+  require('tailwindcss-intersect'),
+];

@@ -24,7 +24,7 @@ export default function Header() {
         shadow ? 'shadow-xl' : ''
       )}
     >
-      <nav className="flex justify-between items-center container mx-auto max-w-[1200px]">
+      <nav className="flex justify-between items-center container mx-auto max-w-[1200px] animate-fade-down animate-delay-[2500ms]">
         <a href="#home" className="w-60">
           <img
             src={logo.src}
