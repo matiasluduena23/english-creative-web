@@ -1,5 +1,3 @@
-import { transform } from 'typescript';
-
 /** @type {import('tailwindcss').Config} */
 export const darkMode = ['class'];
 export const content = [
