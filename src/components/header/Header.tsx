@@ -24,7 +24,7 @@ export default function Header() {
         shadow ? 'shadow-xl' : ''
       )}
     >
-      <nav className="flex justify-between items-center container mx-auto max-w-[1200px] animate-fade-down animate-delay-[2500ms]">
+      <nav className="flex justify-between items-center container mx-auto max-w-[1200px] animate-fade-down animate-delay-[1500ms]">
         <a href="#home" className="w-60">
           <img
             src={logo.src}
@@ -39,17 +39,16 @@ export default function Header() {
             <PopoverTrigger asChild className="">
               <Button
                 variant="ghost"
-                className="group hover:bg-transparent flex items-center gap-1"
+                className="group hover:bg-transparent flex items-center gap-[2px] sm:gap-1 mt-[3px]"
               >
-                <GlobeIcon />
-                <p className="group-hover:opacity-70 mb-1  text-xl ">EN</p>
-                <ChevronDown className="group-hover:opacity-70" />
+                <GlobeIcon className="w-4 mb-[2px] sm:w-8" />
+                <p className="group-hover:opacity-70 mb-1  sm:text-xl ">EN</p>
               </Button>
             </PopoverTrigger>
             <PopoverContent className="w-30 flex flex-col gap-2 font-semibold">
               <a
                 href={getRelativeLocaleUrl('es')}
-                className="text-foreground hover:opacity-70 text-xl"
+                className="text-foreground hover:opacity-70 sm:text-xl"
               >
                 ES
               </a>
