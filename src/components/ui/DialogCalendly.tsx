@@ -22,9 +22,7 @@ export function DialogCalendly() {
             Calendly
           </DialogTitle>
         </DialogHeader>
-        <InlineWidget url="https://calendly.com/englishcreativehub/introductory-call" />
-
-        {/* <InlineWidget url="https://calendly.com/englishcreativehub/introductory-call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=FFFFFF&primary_color=09564E" /> */}
+        <InlineWidget url="https://calendly.com/englishcreativehub/action-call" />
       </DialogContent>
     </Dialog>
   );
