@@ -42,6 +42,8 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.4",
     "tailwindcss-intersect": "^2.0.1"
   }
 }
