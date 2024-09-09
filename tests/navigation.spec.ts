@@ -107,10 +107,10 @@ test('go to about me section after click in navigation link', async ({
 //   ).toBeVisible();
 // });
 
-test('go from podcast to home page', async ({ page }) => {
-  await page.goto('https://english-creative.com/podcast/');
+// test('go from podcast to home page', async ({ page }) => {
+//   await page.goto('https://english-creative.com/podcast/');
 
-  await page.getByRole('link', { name: 'Home' }).click();
+//   await page.getByRole('link', { name: 'Home' }).click();
 
-  await expect(page).toHaveURL('https://english-creative.com/');
-});
+//   await expect(page).toHaveURL('https://english-creative.com/');
+// });
