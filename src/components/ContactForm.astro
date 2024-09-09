@@ -1,5 +1,6 @@
 ---
 import MaterialMail from './MaterialMail.astro';
+const {title= "Contact Me", messagePlaceholder} = Astro.props 
 ---
 
 <form
@@ -8,7 +9,7 @@ import MaterialMail from './MaterialMail.astro';
   name="feedback"
   method="POST"
   action="/success"
-  class="text-background sm:w-[50%]"
+  class="text-background "
 >
   <p class="hidden">
     <label>
@@ -16,7 +17,7 @@ import MaterialMail from './MaterialMail.astro';
     </label>
   </p>
   <input type="hidden" name="form-name" value="feedback" />
-  <h1 class="font-Baloo text-3xl font-semibold mb-6 pt-2">Contact me</h1>
+  <h1 class="font-Baloo text-3xl font-semibold mb-6 pt-2">{title}</h1>
 
   <div class="flex flex-col sm:flex-row gap-4 mb-4">
     <div class="flex flex-col w-full gap-1">
@@ -44,7 +45,7 @@ import MaterialMail from './MaterialMail.astro';
     <label for="message">Message </label>
     <textarea
       name="message"
-      placeholder="Tell me a little bit about the services"
+      placeholder={messagePlaceholder}
       class="font-OpenSans text-foreground flex min-h-[80px] w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
       required></textarea>
   </div>

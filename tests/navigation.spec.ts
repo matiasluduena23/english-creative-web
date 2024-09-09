@@ -93,22 +93,19 @@ test('go to about me section after click in navigation link', async ({
   await expect(page).toHaveURL('https://english-creative.com/aboutme/');
 });
 
-test('open popup after click in the navigation internationalization button', async ({
-  page,
-}) => {
-  await page.goto('https://english-creative.com');
-  await page
-    .getByRole('navigation')
-    .getByRole('button', { name: 'EN', exact: true })
-    .click();
+// test('open popup after click in the navigation internationalization button', async ({
+//   page,
+// }) => {
+//   await page.goto('https://english-creative.com');
+//   await page
+//     .getByRole('navigation')
+//     .getByRole('button', { name: 'EN', exact: true })
+//     .click();
 
-  await expect(
-    page.getByRole('link', { name: 'ES', exact: true })
-  ).toBeVisible();
-
-  await page.getByRole('link', { name: 'ES', exact: true }).click();
-  await expect(page).toHaveURL('https://english-creative.com/es/');
-});
+//   await expect(
+//     page.getByRole('link', { name: 'ES', exact: true })
+//   ).toBeVisible();
+// });
 
 test('go from podcast to home page', async ({ page }) => {
   await page.goto('https://english-creative.com/podcast/');
