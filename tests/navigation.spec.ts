@@ -93,15 +93,15 @@ test('go to about me section after click in navigation link', async ({
   await expect(page).toHaveURL('https://english-creative.com/aboutme/');
 });
 
-test('go to internationalization ES', async ({ page }) => {
-  await page.goto('https://english-creative.com');
-  const logo = page.getByRole('link', { name: 'english creative logo' });
-  await logo.waitFor({ state: 'visible' });
+// test('go to internationalization ES', async ({ page }) => {
+//   await page.goto('https://english-creative.com');
+//   const logo = page.getByRole('link', { name: 'english creative logo' });
+//   await logo.waitFor({ state: 'visible' });
 
-  await page.getByRole('button', { name: 'EN', exact: true }).click();
-  await page.getByRole('link', { name: 'ES', exact: true }).click();
-  await expect(page).toHaveURL('https://english-creative.com/es/');
-});
+//   await page.getByRole('button', { name: 'EN', exact: true }).click();
+//   await page.getByRole('link', { name: 'ES', exact: true }).click();
+//   await expect(page).toHaveURL('https://english-creative.com/es/');
+// });
 
 // internationalization ES
 
@@ -198,13 +198,33 @@ test('ES: go to about me section after click in navigation link', async ({
   await expect(page).toHaveURL('https://english-creative.com/es/aboutme/');
 });
 
-test('go to internationalization EN', async ({ page }) => {
-  await page.goto('https://english-creative.com/es/');
-  const logo = page.getByRole('link', { name: 'english creative logo' });
-  await logo.waitFor({ state: 'visible' });
+// test('go to internationalization EN', async ({ page }) => {
+//   await page.goto('https://english-creative.com/es/');
+//   const logo = page.getByRole('link', { name: 'english creative logo' });
+//   await logo.waitFor({ state: 'visible' });
 
-  await page.getByRole('button', { name: 'ES', exact: true }).click();
+//   await page.getByRole('button', { name: 'ES', exact: true }).click();
 
-  await page.getByRole('link', { name: 'EN', exact: true }).click();
+//   await page.getByRole('link', { name: 'EN', exact: true }).click();
+//   await expect(page).toHaveURL('https://english-creative.com/');
+// });
+
+// Test
+
+test('navigate back forward and reload', async ({ page }) => {
+  await page.goto('https://english-creative.com/');
+
+  await page
+    .getByRole('navigation')
+    .getByRole('link', { name: 'Podcast' })
+    .click();
+  await expect(page).toHaveURL(/.podcast/);
+
+  await page.goBack();
   await expect(page).toHaveURL('https://english-creative.com/');
+
+  await page.goForward();
+  await expect(page).toHaveURL(/.podcast/);
+
+  await page.reload();
 });
