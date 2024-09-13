@@ -1,16 +1,16 @@
-'use client';
-import logo from '@/assets/logo.png';
-import clsx from 'clsx';
-import { useShadowNavigation, useShowNavigation } from '@/lib/hooks';
-import Navigation from './Navigation';
-import { GlobeIcon } from 'lucide-react';
+"use client";
+import logo from "@/assets/logo.png";
+import clsx from "clsx";
+import { useShadowNavigation, useShowNavigation } from "@/lib/hooks";
+import Navigation from "./Navigation";
+import { GlobeIcon } from "lucide-react";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover';
-import { getRelativeLocaleUrl } from 'astro:i18n';
-import { Button } from '@/components/ui/button';
+} from "@/components/ui/popover";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const show = useShowNavigation();
@@ -19,9 +19,9 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        'bg-background py-6 sticky left-0  right-0 w-full z-20 ',
-        show ? 'top-0' : '',
-        shadow ? 'shadow-xl' : ''
+        "bg-background py-6 sticky left-0  right-0 w-full z-20 ",
+        show ? "top-0" : "",
+        shadow ? "shadow-xl" : "",
       )}
     >
       <nav className="flex justify-between items-center container mx-auto max-w-[1200px]">
@@ -41,7 +41,7 @@ export default function Header() {
             </PopoverTrigger>
             <PopoverContent className="w-30 flex flex-col gap-2 font-semibold">
               <a
-                href={getRelativeLocaleUrl('en')}
+                href={getRelativeLocaleUrl("en")}
                 className="text-foreground hover:opacity-70 sm:text-xl"
               >
                 EN

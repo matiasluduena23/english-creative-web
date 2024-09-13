@@ -1,3 +1,3 @@
-import { Observer } from 'tailwindcss-intersect';
+import { Observer } from "tailwindcss-intersect";
 
 Observer.start();

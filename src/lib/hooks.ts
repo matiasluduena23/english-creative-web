@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export function useShowNavigation() {
   const [show, setShow] = useState(false);
@@ -6,7 +6,7 @@ export function useShowNavigation() {
   useEffect(() => {
     let previousScrollPosition = 0;
     let currentScrollPosition = 0;
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       currentScrollPosition = window.scrollY;
       currentScrollPosition > previousScrollPosition
         ? setShow(false)
@@ -22,7 +22,7 @@ export function useShadowNavigation() {
   const [shadow, setShadow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       let currentScroll = window.scrollY;
       currentScroll > 100 ? setShadow(true) : setShadow(false);
     });

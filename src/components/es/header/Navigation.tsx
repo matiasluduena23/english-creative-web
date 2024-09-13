@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import NavLinks from './NavLinks';
-import ToggleNavigation from './ToggleNavigation';
+import NavLinks from "./NavLinks";
+import ToggleNavigation from "./ToggleNavigation";
 
 export default function Navigation() {
   return (

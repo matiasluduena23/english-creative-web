@@ -1,11 +1,11 @@
-import { ChevronDown, GlobeIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ChevronDown, GlobeIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover';
-import { getRelativeLocaleUrl } from 'astro:i18n';
+} from "@/components/ui/popover";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 export default function NavLinks() {
   return (
@@ -53,7 +53,7 @@ export default function NavLinks() {
           </PopoverTrigger>
           <PopoverContent className="w-30 flex flex-col gap-2 font-semibold">
             <a
-              href={getRelativeLocaleUrl('en')}
+              href={getRelativeLocaleUrl("en")}
               className="text-foreground hover:opacity-70 text-xl"
             >
               EN

@@ -1,15 +1,15 @@
 ---
-import { DialogCalendlyEs } from '@/components/ui/DialogCalendlyEs';
-import CardInfo from './CardInfo.astro';
-import CardStep from './CardStep.astro';
-import { getCollection } from 'astro:content';
+import { DialogCalendlyEs } from "@/components/ui/DialogCalendlyEs";
+import CardInfo from "./CardInfo.astro";
+import CardStep from "./CardStep.astro";
+import { getCollection } from "astro:content";
 
-const englishDocsCardsInfo = await getCollection('docs', ({ id }) => {
-  return id.startsWith('es/cardInfo/');
+const englishDocsCardsInfo = await getCollection("docs", ({ id }) => {
+  return id.startsWith("es/cardInfo/");
 });
 
-const englishDocsSteps = await getCollection('docs', ({ id }) => {
-  return id.startsWith('es/cardStep/');
+const englishDocsSteps = await getCollection("docs", ({ id }) => {
+  return id.startsWith("es/cardStep/");
 });
 ---
 

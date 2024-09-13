@@ -1,9 +1,9 @@
 ---
-import Layout from '@/layout/Layout.astro';
-import { Image } from 'astro:assets';
-import podcastLogo from '@/assets/podcastLogo.png';
-import logoRed from '@/assets/logoRed.png';
-import { getRelativeLocaleUrl } from 'astro:i18n';
+import Layout from "@/layout/Layout.astro";
+import { Image } from "astro:assets";
+import podcastLogo from "@/assets/podcastLogo.png";
+import logoRed from "@/assets/logoRed.png";
+import { getRelativeLocaleUrl } from "astro:i18n";
 ---
 
 <Layout title="English Creative | Podcast">
@@ -15,9 +15,9 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
       <div class="max-w-[600px] mx-auto relative">
         <Image
           src={podcastLogo}
-          alt={'logo'}
+          alt={"logo"}
           class="block mx-auto"
-          loading={'eager'}
+          loading={"eager"}
         />
         <a
           href="https://www.kittl.com"
@@ -32,9 +32,9 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
           <p class="mb-[10px]">A podcast by</p>
           <Image
             src={logoRed}
-            alt={'logo english creative'}
+            alt={"logo english creative"}
             class="w-4 mb-[6px]"
-            loading={'eager'}
+            loading={"eager"}
           />
           <p class="font-bold font-Baloo">English Creative</p>
         </div>
@@ -50,7 +50,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
         Stay tuned for our upcoming episodes!
       </p>
       <a
-        href={getRelativeLocaleUrl('es')}
+        href={getRelativeLocaleUrl("es")}
         class="block font-semibold bg-darkGreen text-background py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70 mt-4"
         >Home</a
       >

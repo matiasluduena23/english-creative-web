@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetTrigger,
-} from '@/components/ui/sheet';
-import { MenuIcon } from 'lucide-react';
-import { useState } from 'react';
+} from "@/components/ui/sheet";
+import { MenuIcon } from "lucide-react";
+import { useState } from "react";
 
 export default function ToggleNavigation() {
   const [open, setOpen] = useState(false);
