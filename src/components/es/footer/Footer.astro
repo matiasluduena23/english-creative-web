@@ -1,65 +1,67 @@
 ---
-import { Image } from "astro:assets";
-import logo from "@/assets/logoWithText.png";
-import ContactForm from "./ContactForm.astro";
-import TelegramIcon from "@/assets/TelegramIcon.astro";
-import LinkedInIcon from "@/assets/LinkedInIcon.astro";
-import InstagramIcon from "@/assets/InstagramIcon.astro";
+import { Image } from 'astro:assets';
+import logo from '@/assets/logoWithText.png';
+import ContactForm from './ContactForm.astro';
+import TelegramIcon from '@/assets/TelegramIcon.astro';
+import LinkedInIcon from '@/assets/LinkedInIcon.astro';
+import InstagramIcon from '@/assets/InstagramIcon.astro';
 ---
 
 <footer id="contact" class="bg-darkGreen pt-[7rem]">
-  <div class="container max-w-[1200px] mx-auto">
-    <div class="flex flex-col sm:flex-row-reverse gap-16 mb-16">
-      <ContactForm />
-      <div class="flex flex-col justify-between items-start gap-4 sm:w-[50%]">
-        <Image src={logo} alt="logo" width={120} class="mb-4" />
-        <div class="text-background font-Baloo text-2xl">
-          <h2 class="font-OpenSans mb-2">
-            El poder de transformar está en tus manos
-          </h2>
-          <h3 class="font-bold">y lo sabes!</h3>
-        </div>
+	<div class="container max-w-[1200px] mx-auto">
+		<div class="flex flex-col sm:flex-row-reverse gap-16 mb-16">
+			<div class="sm:w-[50%]">
+				<ContactForm />
+			</div>
+			<div class="flex flex-col justify-between items-start gap-4 sm:w-[50%]">
+				<Image src={logo} alt="logo" width={120} class="mb-4" />
+				<div class="text-background font-Baloo text-2xl">
+					<h2 class="font-OpenSans mb-2">
+						El poder de transformar está en tus manos
+					</h2>
+					<h3 class="font-bold">y lo sabes!</h3>
+				</div>
 
-        <ul
-          class="flex flex-row justify-between items-start gap-2 text-background font-semibold font-Baloo md:gap-8"
-        >
-          <li>
-            <a href="#services" class="hover:opacity-80">Servicios</a>
-          </li>
-          <li>
-            <a href="#about" class="hover:opacity-80">Acerca de</a>
-          </li>
-          <li>
-            <a href="#testimonials" class="hover:opacity-80">Testimonios</a>
-          </li>
-          <li><a href="/es/podcast" class="hover:opacity-80">Podcast</a></li>
-        </ul>
-        <div class="flex flex-wrap items-center gap-4 w-full">
-          <a
-            href="https://t.me/english_creative_hub"
-            target="_blank"
-            class="font-semibold bg-darkGreen border border-background text-background py-1 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-            ><TelegramIcon class="w-4" /> <span>Escríbanos</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/janelle-e-french/"
-            target="_blank"
-            class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-            ><LinkedInIcon class="w-4" /> <span>Conectémonos</span>
-          </a>
-          <a
-            href="https://www.instagram.com/english_creative_hub/"
-            target="_blank"
-            class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-            ><InstagramIcon class="w-4" />
-            <span>Síguenos</span>
-          </a>
-        </div>
-      </div>
-      <hr class="mx-auto opacity-45" />
-    </div>
-  </div>
-  <p class="text-center text-background pt-16 pb-8 font-Baloo">
-    Copyright &copy; 2024 English Creative. All rights reserved.
-  </p>
+				<ul
+					class="flex flex-row justify-between items-start gap-2 text-background font-semibold font-Baloo md:gap-8"
+				>
+					<li>
+						<a href="#services" class="hover:opacity-80">Servicios</a>
+					</li>
+					<li>
+						<a href="#about" class="hover:opacity-80">Acerca de</a>
+					</li>
+					<li>
+						<a href="#testimonials" class="hover:opacity-80">Testimonios</a>
+					</li>
+					<li><a href="/es/podcast" class="hover:opacity-80">Podcast</a></li>
+				</ul>
+				<div class="flex flex-wrap items-center gap-4 w-full">
+					<a
+						href="https://t.me/english_creative_hub"
+						target="_blank"
+						class="font-semibold bg-darkGreen border border-background text-background py-1 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+						><TelegramIcon class="w-4" /> <span>Escríbanos</span>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/janelle-e-french/"
+						target="_blank"
+						class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+						><LinkedInIcon class="w-4" /> <span>Conectémonos</span>
+					</a>
+					<a
+						href="https://www.instagram.com/english_creative_hub/"
+						target="_blank"
+						class="font-semibold bg-darkGreen border border-background text-background py-2 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
+						><InstagramIcon class="w-4" />
+						<span>Síguenos</span>
+					</a>
+				</div>
+			</div>
+			<hr class="mx-auto opacity-45" />
+		</div>
+	</div>
+	<p class="text-center text-background pt-16 pb-8 font-Baloo">
+		Copyright &copy; 2024 English Creative. All rights reserved.
+	</p>
 </footer>
