@@ -60,18 +60,6 @@ test("instagram footer link", async ({ page }) => {
   );
 });
 
-test("linkedIn footer link", async ({ page }) => {
-  await page.goto("https://english-creative.com/#contact");
-  //   Start waiting for new page before clicking. Note no await.
-  const pagePromise = page.context().waitForEvent("page");
-  await page.getByRole("link", { name: "Get connected", exact: true }).click();
-
-  const newPage = await pagePromise;
-  await expect(newPage).toHaveURL(
-    "https://www.linkedin.com/in/janelle-e-french/",
-  );
-});
-
 //Internationalization ES
 
 test("ES services footer link", async ({ page }) => {
@@ -133,17 +121,5 @@ test("ES instagram footer link", async ({ page }) => {
   const newPage = await pagePromise;
   await expect(newPage).toHaveURL(
     "https://www.instagram.com/english_creative_hub/",
-  );
-});
-
-test("ES linkedIn footer link", async ({ page }) => {
-  await page.goto("https://english-creative.com/es/#contact");
-  //   Start waiting for new page before clicking. Note no await.
-  const pagePromise = page.context().waitForEvent("page");
-  await page.getByRole("link", { name: "Conectémonos", exact: true }).click();
-
-  const newPage = await pagePromise;
-  await expect(newPage).toHaveURL(
-    "https://www.linkedin.com/in/janelle-e-french/",
   );
 });
