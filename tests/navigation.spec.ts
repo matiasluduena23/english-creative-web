@@ -93,18 +93,6 @@ test("go to about me section after click in navigation link", async ({
   await expect(page).toHaveURL("https://english-creative.com/aboutme/");
 });
 
-// test('go to internationalization ES', async ({ page }) => {
-//   await page.goto('https://english-creative.com');
-//   const logo = page.getByRole('link', { name: 'english creative logo' });
-//   await logo.waitFor({ state: 'visible' });
-
-//   await page.getByRole('button', { name: 'EN', exact: true }).click();
-//   await page.getByRole('link', { name: 'ES', exact: true }).click();
-//   await expect(page).toHaveURL('https://english-creative.com/es/');
-// });
-
-// internationalization ES
-
 test("ES: go to services section after click get started button", async ({
   page,
 }) => {
@@ -197,19 +185,6 @@ test("ES: go to about me section after click in navigation link", async ({
 
   await expect(page).toHaveURL("https://english-creative.com/es/aboutme/");
 });
-
-// test('go to internationalization EN', async ({ page }) => {
-//   await page.goto('https://english-creative.com/es/');
-//   const logo = page.getByRole('link', { name: 'english creative logo' });
-//   await logo.waitFor({ state: 'visible' });
-
-//   await page.getByRole('button', { name: 'ES', exact: true }).click();
-
-//   await page.getByRole('link', { name: 'EN', exact: true }).click();
-//   await expect(page).toHaveURL('https://english-creative.com/');
-// });
-
-// Test
 
 test("navigate back forward and reload", async ({ page }) => {
   await page.goto("https://english-creative.com/");

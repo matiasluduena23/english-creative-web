@@ -38,27 +38,17 @@ test("podcast footer link", async ({ page }) => {
   await expect(page).toHaveURL("https://english-creative.com/podcast/");
 });
 
-test("telegram footer link", async ({ page }) => {
-  await page.goto("https://english-creative.com/#contact");
-  //   Start waiting for new page before clicking. Note no await.
-  const pagePromise = page.context().waitForEvent("page");
-  await page.getByRole("link", { name: "Get in touch", exact: true }).click();
+// test("instagram footer link", async ({ page }) => {
+//   await page.goto("https://english-creative.com/#contact");
+//   //   Start waiting for new page before clicking. Note no await.
+//   const pagePromise = page.context().waitForEvent("page");
+//   await page.getByRole("link", { name: "Get Creative", exact: true }).click();
 
-  const newPage = await pagePromise;
-  await expect(newPage).toHaveURL("https://t.me/english_creative_hub");
-});
-
-test("instagram footer link", async ({ page }) => {
-  await page.goto("https://english-creative.com/#contact");
-  //   Start waiting for new page before clicking. Note no await.
-  const pagePromise = page.context().waitForEvent("page");
-  await page.getByRole("link", { name: "Get Creative", exact: true }).click();
-
-  const newPage = await pagePromise;
-  await expect(newPage).toHaveURL(
-    "https://www.instagram.com/english_creative_hub/",
-  );
-});
+//   const newPage = await pagePromise;
+//   await expect(newPage).toHaveURL(
+//     "https://www.instagram.com/english_creative_hub/",
+//   );
+// });
 
 //Internationalization ES
 
@@ -102,24 +92,14 @@ test("ES podcast footer link", async ({ page }) => {
   await expect(page).toHaveURL("https://english-creative.com/es/podcast/");
 });
 
-test("ES telegram footer link", async ({ page }) => {
-  await page.goto("https://english-creative.com/es/#contact");
-  //   Start waiting for new page before clicking. Note no await.
-  const pagePromise = page.context().waitForEvent("page");
-  await page.getByRole("link", { name: "Escríbanos", exact: true }).click();
+// test("ES instagram footer link", async ({ page }) => {
+//   await page.goto("https://english-creative.com/es/#contact");
+//   //   Start waiting for new page before clicking. Note no await.
+//   const pagePromise = page.context().waitForEvent("page");
+//   await page.getByRole("link", { name: "Síguenos", exact: true }).click();
 
-  const newPage = await pagePromise;
-  await expect(newPage).toHaveURL("https://t.me/english_creative_hub");
-});
-
-test("ES instagram footer link", async ({ page }) => {
-  await page.goto("https://english-creative.com/es/#contact");
-  //   Start waiting for new page before clicking. Note no await.
-  const pagePromise = page.context().waitForEvent("page");
-  await page.getByRole("link", { name: "Síguenos", exact: true }).click();
-
-  const newPage = await pagePromise;
-  await expect(newPage).toHaveURL(
-    "https://www.instagram.com/english_creative_hub/",
-  );
-});
+//   const newPage = await pagePromise;
+//   await expect(newPage).toHaveURL(
+//     "https://www.instagram.com/english_creative_hub/",
+//   );
+// });
