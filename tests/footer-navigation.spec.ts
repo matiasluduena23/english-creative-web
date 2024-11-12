@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { chromium } from "@playwright/test";
 
 test("services footer link", async ({ page }) => {
   await page.goto("https://english-creative.com/#contact");

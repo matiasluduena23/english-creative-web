@@ -1,8 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '@/assets/logoWithText.png';
-import ContactForm from './ContactForm.astro';
-import TelegramIcon from '@/assets/TelegramIcon.astro';
 import LinkedInIcon from '@/assets/LinkedInIcon.astro';
 import InstagramIcon from '@/assets/InstagramIcon.astro';
 ---
@@ -11,7 +9,11 @@ import InstagramIcon from '@/assets/InstagramIcon.astro';
 	<div class="container max-w-[1200px] mx-auto">
 		<div class="flex flex-col sm:flex-row-reverse gap-16 mb-16">
 			<div class="sm:w-[50%]">
-				<ContactForm />
+				<script
+					is:inline
+					async
+					data-uid="ae4a443460"
+					src="https://english-creative.ck.page/ae4a443460/index.js"></script>
 			</div>
 			<div class="flex flex-col justify-between items-start gap-4 sm:w-[50%]">
 				<Image src={logo} alt="logo" width={120} class="mb-4" />
@@ -41,7 +43,8 @@ import InstagramIcon from '@/assets/InstagramIcon.astro';
 						href="https://t.me/english_creative_hub"
 						target="_blank"
 						class="font-semibold bg-darkGreen border border-background text-background py-1 px-2 rounded-sm hover:opacity-70 flex items-center justify-center gap-2"
-						><TelegramIcon class="w-4" /> <span>Escríbanos</span>
+					>
+						<span>Escríbanos</span>
 					</a>
 					<a
 						href="https://www.linkedin.com/in/janelle-e-french/"
