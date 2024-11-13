@@ -3,7 +3,7 @@ import LayoutEs from '@/layout/LayoutEs.astro';
 import { Image } from 'astro:assets';
 import podcastLogo from '@/assets/podcastLogo.png';
 import logoRed from '@/assets/logoRed.png';
-import ContactForm from '@/components/es/footer/ContactForm.astro';
+import Spotify from '@/assets/Spotify.astro';
 ---
 
 <LayoutEs title="English Creative | Podcast">
@@ -45,59 +45,52 @@ import ContactForm from '@/components/es/footer/ContactForm.astro';
 	<section class="my-20">
 		<div class="container max-w-[800px]">
 			<p class="text-foreground font-semibold text-center py-8">
-				Deja que tu curiosidad te guíe mientras exploramos el viaje de
-				convertirte en "tú mismo" en un segundo idioma, a través de historias
-				reales, conversaciones perspicaces y consejos prácticos de aquellos que
-				ya han pasado por esa experiencia. Descubre el poder del lenguaje, la
-				identidad y la creatividad, y siéntete inspirado para desbloquear nuevas
-				oportunidades para tu proyecto con confianza.
+				Deja que tu curiosidad te guíe mientras exploramos el camino para
+				convertirte en ‘ti mismo’ en un segundo idioma, a través de historias
+				reales, conversaciones perspicaces y lecciones de aquellos que ya han
+				estado allí. Descubre el poder del lenguaje, la identidad y la
+				creatividad, y siéntete inspirado para desbloquear nuevas oportunidades
+				para tu proyecto con confianza.
 			</p>
 			<div>
-				<div id="buzzsprout-large-player-limit-5"></div><script
+				<div id="buzzsprout-large-player-limit-20"></div><script
+					is:inline
 					type="text/javascript"
 					charset="utf-8"
-					src="https://www.buzzsprout.com/2400777.js?artist=&container_id=buzzsprout-large-player-limit-5&limit=5&player=large"
+					src="https://www.buzzsprout.com/2400777.js?artist=&container_id=buzzsprout-large-player-limit-20&limit=20&player=large"
 				></script>
 			</div>
+			<a
+				class="font-semibold bg-[#1ed760] text-white py-3 px-6 rounded-sm mx-auto w-fit hover:opacity-70 mt-8 flex items-center gap-2"
+				href="#jotform"
+			>
+				<Spotify />
+				<span>Eschanos en Spotify</span>
+			</a>
 		</div>
 	</section>
 	<section class="my-20">
 		<div class="container max-w-[800px]">
-			<p class="text-gray-600 font-semibold text-center py-8 text-balance">
-				Únete a mi boletín para ser el primero en enterarte de los próximos
-				talleres, cursos grupales y disponibilidad para sesiones 1:1. Además,
-				recibirás enlaces privados a videos de podcasts con subtítulos, junto
-				con pensamientos e ideas inspiradoras para despertar tu creatividad.
+			<p class="text-gray-600 font-semibold text-center pt-8 text-balance">
+				Únete a mi boletín para recibir consejos gratuitos de inglés para
+				agentes de cambio, ideas sobre el aprendizaje de idiomas y ser el
+				primero en conocer nuevas ofertas. También tendrás acceso a contenido
+				extra de mi podcast. ¡Despierta tu creatividad!
 			</p>
-
-			<form
-				data-netlify="true"
-				netlify-honeypot
-				name="subscribe"
-				method="POST"
-				action="/success"
-				class="flex items-center max-w-[400px] mx-auto"
-			>
-				<input
-					type="email"
-					name="email"
-					placeholder="hello@english-creative.com"
-					class="font-OpenSans text-foreground flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-tr-none rounded-br-none"
-					required
-				/>
-				<button
-					class="block font-semibold bg-darkOrange text-background py-2 px-3 rounded-sm mx-auto w-fit hover:opacity-70 rounded-tl-none rounded-bl-none"
-					>Subscríbete</button
-				>
-			</form>
+			<script
+				is:inline
+				async
+				data-uid="0b78da44dc"
+				src="https://english-creative.ck.page/0b78da44dc/index.js"></script>
 		</div>
 	</section>
 	<section class="py-20 bg-darkGreen">
 		<div class="container max-w-[660px]">
-			<ContactForm
-				title="Existe el click? "
-				messagePlaceholder="Me gustaria estar en el programa..."
-			/>
+			<script
+				is:inline
+				async
+				data-uid="2bb5614b4e"
+				src="https://english-creative.kit.com/2bb5614b4e/index.js"></script>
 		</div>
 	</section>
 </LayoutEs>
